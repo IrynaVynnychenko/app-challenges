@@ -1,0 +1,109 @@
+.login {
+  min-height: 100vh;
+  height: 100%;
+  background-color: #030616;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:before {
+    top: 0px;
+    left: 0px;
+    background-image: radial-gradient(circle at 51% 43%, rgba(3, 6, 22, 0), rgba(245, 187, 12, 0.25) 91%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    z-index: 2;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url('../../images/login-bg.svg');
+    top: 7px;
+    left: 0px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    z-index: 3;
+    width: 20%;
+    height: 100%;
+  }
+
+  .container {
+    position: relative;
+    z-index: 5;
+  }
+
+  &-block {
+    padding-top: 150px;
+    padding-right: 132px;
+    padding-bottom: 125px;
+    padding-left: 147px;
+  }
+
+  &-bg {
+    background-image: linear-gradient(to bottom, rgba(35, 31, 32, 0.5), rgba(35, 31, 32, 0.5)), linear-gradient(to bottom, rgba(35, 31, 32, 0), rgba(35, 31, 32, 0.01) 52%, rgba(35, 31, 32, 0.5) 97%), radial-gradient(circle at 51% 43%, rgba(35, 31, 32, 0), rgba(35, 31, 32, 0.13) 211%);
+    border-radius: 8px;
+  }
+
+  &-form {
+    padding-top: 86px;
+  }
+}
+
+.form-elem {
+  margin-bottom: 28px;
+  border-radius: 4px;
+  border: solid 1px #f1f4fa;
+  padding: 10px 14px;
+  height: 42px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__label {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+
+    svg {
+      width: 20px;
+      height: 16px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.57;
+    color: #ffffff;
+    &::placeholder {
+      opacity: 1;
+      color: #ffffff;
+    }
+  }
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.pre-title {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #fff;
+}
