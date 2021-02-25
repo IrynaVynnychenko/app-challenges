@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/components/login/login.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./components/login/login.css">
 </head>
 
 <body>
@@ -45,6 +45,23 @@
                 </label>
                 <input type="password" id="password" class="form-elem__input" placeholder="Password">
               </div>
+              <div class="form-check">
+                <div class="checkbox__wrap">
+                  <input class="checkbox__input" id="signIn" name="rememberMe" type="checkbox">
+                  <label for="signIn" class="checkbox__label">
+                    <div class="checkbox__faces">
+                      <div class="checkbox__icon">
+                        <i class="icon ">
+                          <svg>
+                            <use xlink:href="#icon-check"></use>
+                          </svg>
+                        </i>
+                      </div>
+                    </div>
+                    <div class="checkbox__text">Keep me signed in</div>
+                  </label>
+                </div>
+              </div>
             </form>
 
           </div>
@@ -53,7 +70,7 @@
     </div>
   </section>
 
-  <script src="/js/main.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
 
