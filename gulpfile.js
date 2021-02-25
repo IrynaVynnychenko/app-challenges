@@ -154,10 +154,7 @@ gulp.task("pageHtml", function () {
 });
 
 const js = [
-    "./src/js/common.js",
-    "./src/js/jquery-1.11.0.min.js",
-    "./src/js/jquery-migrate-1.2.1.min.js",
-    "./src/js/slick.min.js"
+    "./src/js/common.js"
 ];
 
 gulp.task("minify-main-js", function () {
@@ -176,7 +173,10 @@ gulp.task("minify-main-js", function () {
 gulp.task("scripts", function () {
     return gulp
         .src([
-            "./src/js/common.min.js",
+            "./src/js/jquery-1.11.0.min.js",
+            "./src/js/jquery-migrate-1.2.1.min.js",
+            "./src/js/slick.min.js",
+            "./src/js/common.min.js"
         ])
         .pipe(concat("main.js"))
         .pipe(gulp.dest("./dist/js/"))
