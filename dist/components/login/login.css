@@ -11,7 +11,11 @@
   font-weight: bold;
   color: #fff;
   font-size: 14px;
-  line-height: 1.57; }
+  line-height: 1.57;
+  transition: all 0.35s; }
+  .btn:hover {
+    background-color: #E0A929;
+    color: #fff; }
 
 .login {
   min-height: 100vh;

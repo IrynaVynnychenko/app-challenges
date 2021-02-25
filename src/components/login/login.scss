@@ -13,6 +13,11 @@
   color: #fff;
   font-size: 14px;
   line-height: 1.57;
+  transition: all 0.35s;
+  &:hover {
+    background-color: #E0A929;
+    color: #fff;
+  }
 }
 
 .login {
