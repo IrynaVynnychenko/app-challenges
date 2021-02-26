@@ -81,11 +81,16 @@ body {
     h1 {
         color: #f5bb0c;
     }
+
     a {
         color: #333;
     }
 }
 
 :focus {
-    outline: none!important;
-  }
+    outline: none !important;
+}
+
+.page {
+    background-color: #030616;
+}

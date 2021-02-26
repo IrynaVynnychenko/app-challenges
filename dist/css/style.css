@@ -7787,3 +7787,6 @@ body {
 
 :focus {
   outline: none !important; }
+
+.page {
+  background-color: #030616; }
