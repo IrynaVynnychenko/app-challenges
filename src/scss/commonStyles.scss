@@ -84,6 +84,9 @@ body {
 
     a {
         color: #333;
+        &:hover {
+            color: #333; 
+        }
     }
 }
 

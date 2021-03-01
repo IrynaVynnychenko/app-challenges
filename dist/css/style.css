@@ -7784,6 +7784,8 @@ body {
 
 .pages-list a {
   color: #333; }
+  .pages-list a:hover {
+    color: #333; }
 
 :focus {
   outline: none !important; }
