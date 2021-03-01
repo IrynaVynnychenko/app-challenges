@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +11,41 @@
   <link rel="stylesheet" href="./components/leftMenu/leftMenu.css">
   <link rel="stylesheet" href="./components/topBar/topBar.css">
   <link rel="stylesheet" href="./components/breadcrumbs/breadcrumbs.css">
+  <link rel="stylesheet" href="./components/carousel/carousel.css">
+  <link rel="stylesheet" href="./components/available/available.css">
+  <link rel="stylesheet" href="./components/activeChallenges/activeChallenges.css">
 </head>
+
 <body>
 
   <section class="page">
     <div class="container-fluid">
       <div class="row">
         @@include('./components/leftMenu/index.html')
-        <div class="col-lg-10 px-0 page-bg">
+        <div class="col-lg-10 px-0 page-bg ml-auto">
           @@include('./components/topBar/index.html')
           @@include('./components/breadcrumbs/index.html')
+          @@include('./components/carousel/index.html')
+          @@include('./components/available/index.html')
+          @@include('./components/activeChallenges/index.html')
         </div>
       </div>
     </div>
   </section>
 
   <script src="./js/main.js"></script>
-  
+  <script>
+    $(document).ready(function () {
+      $('.available-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '.next',
+        prevArrow: '.previous',
+        infinite: false
+      });
+    });
+  </script>
+
 </body>
+
 </html>
