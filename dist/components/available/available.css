@@ -12,7 +12,8 @@
   min-height: 246px;
   height: 100%;
   padding: 24px 30px 28px;
-  transition: all 0.35s; }
+  transition: all 0.35s;
+  border-radius: 8px; }
   .available-item:hover {
     box-shadow: 0 0 20px 0 rgba(202, 153, 44, 0.75);
     background-color: #000036;
@@ -24,7 +25,8 @@
     left: 0px;
     width: 100%;
     height: 100%;
-    z-index: 1; }
+    z-index: 1;
+    border-radius: 8px; }
     .available-item__img:before {
       position: absolute;
       z-index: 2;
