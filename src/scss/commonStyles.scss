@@ -181,6 +181,10 @@ a:hover {
     }
 }
 
+.page-right {
+    width: calc(100% - 280px);
+}
+
 .carousel-arrow {
     border-radius: 4px;
     width: 40px;
