@@ -39,7 +39,10 @@
       background-image: linear-gradient(to right, rgba(3, 6, 22, 0) 70%, #030616 93%), linear-gradient(to bottom, rgba(3, 6, 22, 0), rgba(3, 6, 22, 0.02) 52%, #030616 97%), radial-gradient(circle at 49% 56%, rgba(3, 6, 22, 0), #030616 89%, #030616 89%); }
     .available-item__img img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px; }
   .available-item__content {
     position: relative;
     z-index: 2;
