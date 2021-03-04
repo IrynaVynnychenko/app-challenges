@@ -68,7 +68,20 @@
         infinite: false
       });
     });
-    
+  </script>
+
+  <script>
+    const menuBtn = document.querySelector('.arrow-down');
+    const menu = document.querySelector('.part-menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('visible');
+    });
+
+    menu.addEventListener('mouseleave', () => {
+      menu.classList.remove('visible');
+    });
+
   </script>
 
 </body>
