@@ -1,6 +1,7 @@
 .topBar {
   padding-left: 20px;
   z-index: 4 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
   &-row {
     display: flex;
@@ -117,63 +118,6 @@
   width: 24px;
   height: 24px;
   cursor: pointer;
-}
-
-.bottomBar {
-  padding-top: 44px;
-  position: relative;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-
-  &-bg {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.05);
-    top: 0px;
-    left: 0px;
-  }
-
-  &-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    &__item {
-      padding-bottom: 34px;
-      font-size: 14px;
-      line-height: 1.57;
-      text-align: center;
-      color: #ffffff;
-      margin-left: 20px;
-      margin-right: 20px;
-      position: relative;
-      transition: all 0.35s;
-      text-transform: uppercase;
-
-      &:hover {
-        color: #f5bb0c;
-      }
-
-      &.active {
-        font-weight: bold;
-
-        &:after {
-          position: absolute;
-          content: "";
-          background-color: #f5bb0c;
-          width: 5px;
-          height: 5px;
-          bottom: 25px;
-          border-radius: 50%;
-          left: calc(50% - 2.5px);
-        }
-      }
-    }
-  }
 }
 
 .part-menu {

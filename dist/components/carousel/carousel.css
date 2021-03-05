@@ -1,7 +1,10 @@
 .carousel {
-  padding: 60px 40px; }
+  padding: 60px 40px 40px 40px; }
   .carousel .btn {
     margin-left: 15px; }
+
+.challenge-slider .col-lg-3 {
+  margin-bottom: 20px; }
 
 .challenge-item {
   margin-top: 56px;
@@ -27,8 +30,8 @@
   .challenge-item.yellow .challenge-item__award {
     background-image: url("../../images/award-yellow.svg"); }
   .challenge-item.yellow .challenge-item__body {
-    border-image-source: linear-gradient(to top, #030304, #f5bb0c);
-    background-image: linear-gradient(to top, #201e2b, #000000); }
+    border-image-source: linear-gradient(to top, #201e3b, #f5bb0c);
+    background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #f5bb0c); }
     .challenge-item.yellow .challenge-item__body:hover {
       box-shadow: 0 0 20px 0 #f5bb0c; }
   .challenge-item__award {

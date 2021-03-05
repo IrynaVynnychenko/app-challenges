@@ -1,0 +1,9 @@
+.copyright {
+  background-color: #333333;
+  padding: 14px 40px;
+  margin-top: 30px; }
+  .copyright-link:first-child {
+    margin-right: 30px; }
+  .copyright .common-style {
+    text-transform: none;
+    opacity: 0.5; }

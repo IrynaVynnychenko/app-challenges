@@ -1,0 +1,15 @@
+.copyright {
+  background-color: #333333;
+  padding: 14px 40px;
+  margin-top: 30px;
+  &-link {
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  .common-style {
+    text-transform: none;
+    opacity: 0.5;
+  }
+}
