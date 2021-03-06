@@ -7794,8 +7794,11 @@ body {
   background-color: #030616;
   overflow: hidden; }
   .page-bg {
-    background-image: radial-gradient(circle at 51% 43%, rgba(3, 6, 22, 0), rgba(245, 187, 12, 0.25) 92%);
-    position: relative; }
+    background-image: radial-gradient(circle at 51% 43%, rgba(3, 6, 22, 0), rgba(245, 187, 12, 0.25) 122%);
+    position: relative;
+    background-color: #030616;
+    min-height: 100vh;
+    height: 100%; }
     .page-bg:after {
       content: "";
       position: absolute;
@@ -7853,7 +7856,9 @@ a:hover {
       color: #fff; }
 
 .page-right {
-  width: calc(100% - 280px); }
+  width: calc(100% - 280px);
+  display: flex;
+  flex-direction: column; }
 
 .carousel-arrow {
   border-radius: 4px;
@@ -7888,6 +7893,9 @@ a:hover {
 .mb-26 {
   margin-bottom: 26px; }
 
+.mb-12 {
+  margin-bottom: 12px; }
+
 .form-control:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -7902,5 +7910,255 @@ a:hover {
 .mb-22 {
   margin-bottom: 22px; }
 
-.btn.focus, .btn:focus {
+.btn.focus,
+.btn:focus {
   box-shadow: none; }
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.57;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-image: none;
+  padding: 10px 40px 10px 20px; }
+
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none; }
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 42px;
+  line-height: 3;
+  background: transparent;
+  border-radius: 4px;
+  border: solid 1px rgba(255, 255, 255, 0.25); }
+
+select {
+  flex: 1;
+  color: #fff;
+  cursor: pointer; }
+
+/* Arrow */
+.select::after {
+  content: url("../../images/select-arrow.svg");
+  position: absolute;
+  top: 1px;
+  right: 8px;
+  width: 32px;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+/* Transition */
+.select:hover::after {
+  color: #f39c12; }
+
+.activeChallenges-item {
+  margin-left: 26px;
+  justify-content: center; }
+  .activeChallenges-item .active-name {
+    font-weight: bold;
+    color: #ff8003;
+    margin-bottom: 3px; }
+  .activeChallenges-item .challenge-tags__item {
+    margin-left: 0px;
+    max-width: fit-content;
+    margin-bottom: 0px; }
+
+.challenge-tags__item {
+  margin: 0px 5px 10px 5px;
+  padding: 2px 10px;
+  border-radius: 2px;
+  background-color: #777777;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.myChallenges .activeChallenges {
+  margin-top: 30px; }
+
+.challenge-item {
+  border-radius: 8px;
+  background-color: #fff;
+  position: relative;
+  cursor: pointer;
+  border-image-source: linear-gradient(to top, #201e3b, #c0c0c0);
+  border-image-slice: 1;
+  background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #c0c0c0);
+  color: #fff;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column; }
+  .challenge-item.grey .challenge-amount__numb {
+    color: #c0c0c0; }
+  .challenge-item.grey .challenge-item__award {
+    background-image: url("../../images/award-grey.svg"); }
+  .challenge-item.grey .challenge-item__body {
+    border-image-source: linear-gradient(to top, #201e3b, #c0c0c0);
+    background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #c0c0c0); }
+    .challenge-item.grey .challenge-item__body:hover {
+      box-shadow: 0 0 20px 0 silver; }
+  .challenge-item.yellow .challenge-amount__numb {
+    color: #f5bb0c; }
+  .challenge-item.yellow .challenge-item__award {
+    background-image: url("../../images/award-yellow.svg"); }
+  .challenge-item.yellow .challenge-item__body {
+    border-image-source: linear-gradient(to top, #201e3b, #f5bb0c);
+    background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #f5bb0c); }
+    .challenge-item.yellow .challenge-item__body:hover {
+      box-shadow: 0 0 20px 0 #f5bb0c; }
+  .challenge-item__award {
+    background-image: url("../../images/award-orange.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 97px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 110px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    position: absolute;
+    content: '';
+    top: -26px;
+    left: calc(50% - 55px);
+    z-index: 3; }
+    .challenge-item__award .reward {
+      font-size: 10px;
+      line-height: 1.6;
+      color: #ffffff;
+      margin-bottom: 0px;
+      text-transform: uppercase; }
+    .challenge-item__award b {
+      font-size: 25px;
+      line-height: 1.2; }
+  .challenge-item__body {
+    border-radius: 8px;
+    transition: all 0.35s;
+    background-color: #201E2B;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 3px;
+    border-image-source: linear-gradient(to top, #201e3b, #ff8003);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #ff8003);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    min-height: 474px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1; }
+    .challenge-item__body-spaces {
+      padding: 22px 25px 30px;
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column; }
+    .challenge-item__body:hover {
+      box-shadow: 0 0 20px 0 #ff9800;
+      background-color: #000036; }
+    .challenge-item__body-bg {
+      height: 349px;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      content: '';
+      width: calc(100% + 6px);
+      z-index: 2;
+      border-radius: 8px; }
+      @media (max-width: 1932px) {
+        .challenge-item__body-bg {
+          height: 360px; } }
+      .challenge-item__body-bg svg {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 8px; }
+  .challenge-item.grey .challenge-amount__numb {
+    color: #c0c0c0; }
+  .challenge-item.grey .challenge-name {
+    color: #c0c0c0; }
+  .challenge-item.grey .challenge-time__line-amount {
+    background-image: linear-gradient(to right, rgba(202, 153, 44, 0) 0%, #c0c0c0 100%); }
+  .challenge-item.yellow .challenge-amount__numb {
+    color: #f5bb0c; }
+  .challenge-item.yellow .challenge-name {
+    color: #f5bb0c; }
+  .challenge-item.yellow .challenge-time__line-amount {
+    background-image: linear-gradient(to right, rgba(202, 153, 44, 0) 0%, #f5bb0c 100%); }
+
+.challenge-time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px; }
+  .challenge-time__field-name {
+    font-size: 12px;
+    line-height: 1.67;
+    color: #ffffff;
+    margin-bottom: 10px; }
+  .challenge-time__line {
+    max-width: 220px;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    border-radius: 10.5px;
+    box-shadow: 0 0 2px 0 rgba(192, 192, 192, 0.5), inset 0 1px 6px 0 rgba(192, 192, 192, 0.36);
+    background-color: #201e2b;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1; }
+    .challenge-time__line-amount {
+      border-radius: 10.5px;
+      background-image: linear-gradient(to right, rgba(202, 153, 44, 0) 0%, #ff9800 100%);
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+      content: '';
+      top: 0px;
+      left: 0px; }
+  .challenge-time__timer-item {
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 3px 4px;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #ffffff;
+    margin: 0px 3px; }
+
+.col-2-3 {
+  width: calc(100% / 3 * 2); }
+
+.col-1-3 {
+  width: calc(100% / 3 * 1); }

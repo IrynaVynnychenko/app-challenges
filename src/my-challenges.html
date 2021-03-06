@@ -10,39 +10,28 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./components/leftMenu/leftMenu.css">
   <link rel="stylesheet" href="./components/topBar/topBar.css">
-  <link rel="stylesheet" href="./components/carousel/carousel.css">
-  <link rel="stylesheet" href="./components/available/available.css">
+  <link rel="stylesheet" href="./components/bottomBar/bottomBar.css">
   <link rel="stylesheet" href="./components/activeChallenges/activeChallenges.css">
-  <link rel="stylesheet" href="./components/helpBlock/helpBlock.css">
   <link rel="stylesheet" href="./components/copyright/copyright.css">
 </head>
 
 <body>
 
-  <section class="page">
+  <section class="page myChallenges">
     <div class="container-fluid">
       <div class="row">
         @@include('./components/leftMenu/index.html')
         <div class="page-right page-bg ml-auto">
           @@include('./components/topBar/index.html')
-
-          <section class="carousel">
-            <div class="container-fluid">
-              @@include('./components/newChallengesNotFilter/index.html')
-              @@include('./components/carousel/index.html')
-            </div>
-          </section>
-
-          @@include('./components/available/index.html')
+          @@include('./components/bottomBar/index.html')
 
           <section class="activeChallenges">
             <div class="container-fluid">
-              @@include('./components/myChallengesNotFilter/index.html')
+              @@include('./components/myChallengesViaFilter/index.html')
               @@include('./components/activeChallenges/index.html')
             </div>
           </section>
-          
-          @@include('./components/helpBlock/index.html')
+
           @@include('./components/copyright/index.html')
         </div>
       </div>
@@ -57,15 +46,6 @@
         slidesToScroll: 1,
         nextArrow: '.available-games .next',
         prevArrow: '.available-games .previous',
-        infinite: false
-      });
-    });
-    $(document).ready(function () {
-      $('.prize-slider').slick({
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        nextArrow: '.leaderBoards .next',
-        prevArrow: '.leaderBoards .previous',
         infinite: false
       });
     });

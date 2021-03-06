@@ -30,9 +30,23 @@
           @@include('./components/topBar/index.html')
           @@include('./components/bottomBar/index.html')
           @@include('./components/breadcrumbs/index.html')
-          @@include('./components/carousel/index.html')
+
+          <section class="carousel">
+            <div class="container-fluid">
+              @@include('./components/newChallengesNotFilter/index.html')
+              @@include('./components/carousel/index.html')
+            </div>
+          </section>
+
           @@include('./components/available/index.html')
-          @@include('./components/activeChallenges/index.html')
+
+          <section class="activeChallenges">
+            <div class="container-fluid">
+              @@include('./components/myChallengesNotFilter/index.html')
+              @@include('./components/activeChallenges/index.html')
+            </div>
+          </section>
+
           @@include('./components/leaderBoards/index.html')
           @@include('./components/games/index.html')
           @@include('./components/helpBlock/index.html')
@@ -49,6 +63,15 @@
         slidesToScroll: 1,
         nextArrow: '.available-games .next',
         prevArrow: '.available-games .previous',
+        infinite: false
+      });
+    });
+    $(document).ready(function () {
+      $('.prize-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        nextArrow: '.leaderBoards .next',
+        prevArrow: '.leaderBoards .previous',
         infinite: false
       });
     });
@@ -83,7 +106,6 @@
     menu.addEventListener('mouseleave', () => {
       menu.classList.remove('visible');
     });
-
   </script>
 
 </body>

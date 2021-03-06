@@ -7,13 +7,22 @@
 }
 
 .challenge-slider {
-  .col-lg-3 {
+  .col {
     margin-bottom: 20px;
+    padding-top: 56px;
+  }
+
+  .slick-slide {
+    height: auto !important;
+  }
+
+  .slick-track {
+    height: 100%;
+    display: flex;
   }
 }
 
 .challenge-item {
-  margin-top: 56px;
   border-radius: 8px;
   background-color: #fff;
   position: relative;
@@ -22,6 +31,10 @@
   border-image-slice: 1;
   background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #c0c0c0);
   color: #fff;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
 
   &.grey {
     .challenge-amount__numb {
@@ -118,6 +131,9 @@
       padding: 22px 25px 30px;
       position: relative;
       z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
     }
 
     &:hover {
@@ -182,6 +198,9 @@
   &-content {
     z-index: 3;
     position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   &-amount {
@@ -304,8 +323,39 @@
   align-items: center;
   justify-content: center;
 
+  &.registred {
+    margin-top: auto;
+    .btn {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: solid 1px #f5bb0c;
+      max-width: 294px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      color: #f5bb0c;
+
+      img {
+        width: 24px;
+        height: 25px;
+      }
+
+      span {
+        display: flex;
+        margin-left: 11px;
+      }
+    }
+  }
+
   @media(max-width: 1932px) {
     flex-direction: column;
+
+    .btn {
+      max-width: 294px;
+      width: 100%;
+    }
   }
 
   &__coins {
@@ -326,6 +376,10 @@
       padding: 10px 20px;
       margin-bottom: 20px;
       margin-right: 0px;
+      max-width: 294px;
+      width: 100%;
+      justify-content: center;
+      text-align: center;
     }
 
     svg {
