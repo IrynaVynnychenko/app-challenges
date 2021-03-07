@@ -10,52 +10,38 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./components/leftMenu/leftMenu.css">
   <link rel="stylesheet" href="./components/topBar/topBar.css">
-  <link rel="stylesheet" href="./components/bottomBar/bottomBar.css">
   <link rel="stylesheet" href="./components/breadcrumbs/breadcrumbs.css">
   <link rel="stylesheet" href="./components/carousel/carousel.css">
-  <link rel="stylesheet" href="./components/available/available.css">
-  <link rel="stylesheet" href="./components/activeChallenges/activeChallenges.css">
   <link rel="stylesheet" href="./components/leaderBoards/leaderBoards.css">
-  <link rel="stylesheet" href="./components/games/games.css">
-  <link rel="stylesheet" href="./components/helpBlock/helpBlock.css">
+  <link rel="stylesheet" href="./components/copyright/copyright.css">
 </head>
 
 <body>
 
-  <section class="page">
+  <section class="page challengesGame">
     <div class="container-fluid">
       <div class="row">
         @@include('./components/leftMenu/index.html')
         <div class="page-right page-bg ml-auto">
           @@include('./components/topBar/index.html')
-          @@include('./components/bottomBar/index.html')
           @@include('./components/breadcrumbs/index.html')
 
           <section class="carousel">
             <div class="container-fluid">
-              @@include('./components/newChallengesNotFilter/index.html')
+              @@include('./components/newChallengesViaFilter/index.html')
               @@include('./components/carousel/index.html')
-            </div>
-          </section>
-
-          @@include('./components/available/index.html')
-
-          <section class="activeChallenges">
-            <div class="container-fluid">
-              @@include('./components/myChallengesNotFilter/index.html')
-              @@include('./components/activeChallenges/index.html')
             </div>
           </section>
 
           <section class="leaderBoards">
             <div class="container-fluid">
-              @@include('./components/leaderBoardsNotFilter/index.html')
+              @@include('./components/leaderBoardsViaFilter/index.html')
               @@include('./components/leaderBoards/index.html')
             </div>
           </section>
 
-          @@include('./components/games/index.html')
-          @@include('./components/helpBlock/index.html')
+          @@include('./components/copyright/index.html')
+
         </div>
       </div>
     </div>
@@ -64,29 +50,11 @@
   <script src="./js/main.js"></script>
   <script>
     $(document).ready(function () {
-      $('.available-slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        nextArrow: '.available-games .next',
-        prevArrow: '.available-games .previous',
-        infinite: false
-      });
-    });
-    $(document).ready(function () {
       $('.prize-slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         nextArrow: '.leaderBoards .next',
         prevArrow: '.leaderBoards .previous',
-        infinite: false
-      });
-    });
-    $(document).ready(function () {
-      $('.games-slider').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        nextArrow: '.games .next',
-        prevArrow: '.games .previous',
         infinite: false
       });
     });

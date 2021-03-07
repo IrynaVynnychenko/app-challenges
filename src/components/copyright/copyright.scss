@@ -1,10 +1,8 @@
 .copyright {
   background-color: #333333;
   padding: 14px 40px;
-  margin-top: 30px;
-  @media(max-height: 100vh) {
-    margin-top: auto;
-  }
+  margin-top: auto;
+
   &-link {
     &:first-child {
       margin-right: 30px;

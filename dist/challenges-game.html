@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="./css/style.css"><link rel="stylesheet" href="./components/leftMenu/leftMenu.css"><link rel="stylesheet" href="./components/topBar/topBar.css"><link rel="stylesheet" href="./components/carousel/carousel.css"><link rel="stylesheet" href="./components/available/available.css"><link rel="stylesheet" href="./components/activeChallenges/activeChallenges.css"><link rel="stylesheet" href="./components/helpBlock/helpBlock.css"><link rel="stylesheet" href="./components/copyright/copyright.css"></head><body><section class="page"><div class="container-fluid"><div class="row"><div class="d-flex flex-column leftMenu position-fixed">
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><meta name="robots" content="noindex, nofollow"><link rel="stylesheet" href="./css/style.css"><link rel="stylesheet" href="./components/leftMenu/leftMenu.css"><link rel="stylesheet" href="./components/topBar/topBar.css"><link rel="stylesheet" href="./components/breadcrumbs/breadcrumbs.css"><link rel="stylesheet" href="./components/carousel/carousel.css"><link rel="stylesheet" href="./components/leaderBoards/leaderBoards.css"><link rel="stylesheet" href="./components/copyright/copyright.css"></head><body><section class="page challengesGame"><div class="container-fluid"><div class="row"><div class="d-flex flex-column leftMenu position-fixed">
   <div class="logo">
     <img src="./images/challenge.svg" alt="#">
   </div>
@@ -223,18 +223,80 @@
   </div>
 </section>
 
-<section class="carousel"><div class="container-fluid"><div class="row">
-  <div class="col-lg-4">
-    <div class="d-flex align-items-end h-100">
-      <div class="common-style">
-        <b>New challenges</b>
+ <section class="breadcrumbs">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="d-flex flex-column">
+          <a href="#" class="return d-flex align-items-center">
+            <svg width="15px" height="13px">
+              <use xlink:href="#icon-arrow-back"></use>
+            </svg>
+            <span class="return-text">View all challenges</span>
+          </a>
+          <div class="breadcrumbs-title">
+            <b>CHALLENGES</b> 1st <span>
+              APex LEGENDS
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="breadcrumbs-logo d-flex align-items-end justify-content-end">
+          <img src="./images/apex-logo.svg" alt="APEX logo">
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-lg-8">
+</section>
+<section class="carousel"><div class="container-fluid"><div class="row">
+  <div class="col-lg-8 mb-26">
+    <div class="d-flex align-items-end">
+      <div class="d-flex flex-column mr-35">
+        <label for="inputChallengeTypes" class="common-style mb-5">
+          <b>FILTER BY CHALLENGE TYPE</b>
+        </label>
+        <div class="select">
+          <select name="inputChallengeTypes" id="inputChallengeTypes">
+            <option selected disabled>View All Challenges</option>
+            <option value="1">Pure CSS</option>
+            <option value="2">No JS</option>
+            <option value="3">Nice!</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex flex-column mr-35">
+        <label for="inputChallengeTypes" class="common-style mb-5">
+          <b>FILTER BY GAME</b>
+        </label>
+        <div class="select">
+          <select name="inputChallengeTypes" id="inputChallengeTypes">
+            <option selected disabled>VIEW ALL GAMES</option>
+            <option value="1">Pure CSS</option>
+            <option value="2">No JS</option>
+            <option value="3">Nice!</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex flex-column mr-35">
+        <label for="inputChallengeTypes" class="common-style mb-5">
+          <b>FILTER BY Game mode</b>
+        </label>
+        <div class="select">
+          <select name="inputChallengeTypes" id="inputChallengeTypes">
+            <option selected disabled>VIEW ALL GAMES</option>
+            <option value="1">Pure CSS</option>
+            <option value="2">No JS</option>
+            <option value="3">Nice!</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 mb-26">
 
-    <div class="d-flex">
-      <div class="ml-auto d-flex align-items-end h-100">
+    <div class="d-flex h-100">
+      <div class="ml-auto d-flex align-items-end">
         <div class="bts d-flex align-items-end">
           <div class="active previous carousel-arrow">
             <svg width="16px" height="14px">
@@ -247,7 +309,6 @@
             </svg>
           </div>
         </div>
-        <a href="#" class="btn _transparent">View All Challenges</a>
       </div>
     </div>
 
@@ -1064,646 +1125,1562 @@
     </div>
   </div>
 </div>
-</div></section><section class="available-games">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="d-flex align-items-end h-100">
-          <div class="common-style">
-            <b>Available games</b>
-          </div>
-        </div>
+</div></section><section class="leaderBoards"><div class="container-fluid"><div class="row">
+  <div class="col-lg-6 mb-26">
+    <div class="d-flex flex-column justify-content-end h-100">
+      <div class="common-style mb-3">
+        <b>LEADERBOARDS</b>
       </div>
-      <div class="col-lg-8">
-
-        <div class="d-flex">
-          <div class="ml-auto d-flex align-items-end">
-            <div class="bts d-flex align-items-end">
-              <div class="active previous carousel-arrow">
-                <svg width="16px" height="14px">
-                  <use xlink:href="#icon-carousel-arrow-left"></use>
-                </svg>
-              </div>
-              <div class="next carousel-arrow">
-                <svg width="16px" height="14px">
-                  <use xlink:href="#icon-carousel-arrow-right"></use>
-                </svg>
-              </div>
-            </div>
-            <a href="#" class="btn _transparent">View All Games</a>
-          </div>
-        </div>
-
+      <div class="common-style _text">
+        <p>The weekly leaderboards have no entry fee but still offer reward.</p>
+        <p>Keep the client running while you play your games to join the leaderboard automatically.</p>
       </div>
     </div>
-    <div class="row available-slider">
-      <div class="col-lg-4">
-        <div class="available-item">
-          <div class="available-item__img">
-            <img src="./images/available-1.png" alt="#">
+  </div>
+  <div class="col-lg-6 mb-26">
+    <div class="d-flex align-items-end justify-content-end h-100">
+      <div class="d-flex flex-column mr-35">
+        <label for="inputChallengeTypes" class="common-style mb-5">
+          <b>FILTER BY CHALLENGE TYPE</b>
+        </label>
+        <div class="select">
+          <select name="inputChallengeTypes" id="inputChallengeTypes">
+            <option selected disabled>View All Challenges</option>
+            <option value="1">Pure CSS</option>
+            <option value="2">No JS</option>
+            <option value="3">Nice!</option>
+          </select>
+        </div>
+      </div>
+      <div class="d-flex align-items-end">
+        <div class="bts d-flex align-items-end">
+          <div class="active previous carousel-arrow">
+            <svg width="16px" height="14px">
+              <use xlink:href="#icon-carousel-arrow-left"></use>
+            </svg>
           </div>
-          <div class="available-item__content d-flex flex-column">
-            <div class="w-100 d-flex align-items-start justify-content-between">
-              <div class="col-2-3">
-                <div class="d-flex flex-column">
-                  <div class="available-item__content-title">
-                    PLAY APEX LEGENDS
-                  </div>
-                  <div class="available-item__content-text">
-                    New Challenges Available
-                  </div>
-                </div>
-              </div>
-              <div class="col-1-3">
-                <div class="available-item__content-logo">
-                  <img src="./images/apex-logo.svg" alt="#">
-                </div>
-              </div>
+          <div class="next carousel-arrow">
+            <svg width="16px" height="14px">
+              <use xlink:href="#icon-carousel-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="row prize-slider">
+  <div class="col-lg-6 mb-22">
+    <div class="prize-item d-flex flex-column yellow">
+      <div class="challenge-item__award">
+        <span class="reward">
+          PRIZE POOL
+        </span>
+        <b>7 000</b>
+        <span class="common-style">EURO</span>
+      </div>
+      <div class="d-flex w-100 prize-item__row">
+        <div class="col-2-3">
+          <div class="d-flex flex-column">
+            <div class="prize-logo">
+              <img src="./images/apex-logo.svg" alt="#">
             </div>
-            <div class="d-flex mt-auto">
-              <a href="#" class="btn">VIEW CHALLENGES</a>
+            <div class="prize-game__name">
+              <span>WEEKLY</span> FASTEST KILL
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="challenge-time">
+            <div class="challenge-time__field-name">
+              <b>TIME LEFT</b>
+            </div>
+            <div class="challenge-time__line">
+              <div class="challenge-time__line-amount" style="width: 35%"></div>
+            </div>
+            <div class="challenge-time__timer d-flex">
+              <div class="challenge-time__timer-item">
+                <b>11</b> D
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>09</b> H
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>26</b> M
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>15</b> S
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="available-item">
-          <div class="available-item__img">
-            <img src="./images/available-2.png" alt="#">
-          </div>
-          <div class="available-item__content d-flex flex-column">
-            <div class="w-100 d-flex align-items-start justify-content-between">
-              <div class="col-2-3">
-                <div class="d-flex flex-column">
-                  <div class="available-item__content-title">
-                    PLAY FORTNITE
-                  </div>
-                  <div class="available-item__content-text">
-                    New Challenges Available
-                  </div>
-                </div>
-              </div>
-              <div class="col-1-3">
-                <div class="available-item__content-logo">
-                  <img src="./images/fortnite-logo.svg" alt="#">
-                </div>
-              </div>
+      <div class="prize-column">
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-name">
+              #
             </div>
-            <div class="d-flex mt-auto">
-              <a href="#" class="btn">VIEW CHALLENGES</a>
+          </div>
+          <div class="col-prize-60">
+            <div class="col-name">
+              NAME
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              TIME
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="col-name">
+              PRIZE
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="available-item">
-          <div class="available-item__img">
-            <img src="./images/available-3.png" alt="#">
-          </div>
-          <div class="available-item__content d-flex flex-column">
-            <div class="w-100 d-flex align-items-start justify-content-between">
-              <div class="col-2-3">
-                <div class="d-flex flex-column">
-                  <div class="available-item__content-title">
-                    PLAY PUBG
-                  </div>
-                  <div class="available-item__content-text">
-                    New Challenges Available
-                  </div>
-                </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-yellow.svg" alt="1st place">
               </div>
-              <div class="col-1-3">
-                <div class="available-item__content-logo">
-                  <img src="./images/pubg-logo.svg" alt="#">
-                </div>
-              </div>
-            </div>
-            <div class="d-flex mt-auto">
-              <a href="#" class="btn">VIEW CHALLENGES</a>
+              <span class="col-award__numb">
+                1
+              </span>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="available-item">
-          <div class="available-item__img">
-            <img src="./images/available-3.png" alt="#">
-          </div>
-          <div class="available-item__content d-flex flex-column">
-            <div class="w-100 d-flex align-items-start justify-content-between">
-              <div class="col-2-3">
-                <div class="d-flex flex-column">
-                  <div class="available-item__content-title">
-                    PLAY PUBG
-                  </div>
-                  <div class="available-item__content-text">
-                    New Challenges Available
-                  </div>
-                </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-1.png" alt="#">
               </div>
-              <div class="col-1-3">
-                <div class="available-item__content-logo">
-                  <img src="./images/pubg-logo.svg" alt="#">
-                </div>
-              </div>
+              Harry Rowe
             </div>
-            <div class="d-flex mt-auto">
-              <a href="#" class="btn">VIEW CHALLENGES</a>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              7 000€
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="available-item">
-          <div class="available-item__img">
-            <img src="./images/available-3.png" alt="#">
-          </div>
-          <div class="available-item__content d-flex flex-column">
-            <div class="w-100 d-flex align-items-start justify-content-between">
-              <div class="col-2-3">
-                <div class="d-flex flex-column">
-                  <div class="available-item__content-title">
-                    PLAY PUBG
-                  </div>
-                  <div class="available-item__content-text">
-                    New Challenges Available
-                  </div>
-                </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-grey.svg" alt="1st place">
               </div>
-              <div class="col-1-3">
-                <div class="available-item__content-logo">
-                  <img src="./images/pubg-logo.svg" alt="#">
-                </div>
-              </div>
+              <span class="col-award__numb">
+                2
+              </span>
             </div>
-            <div class="d-flex mt-auto">
-              <a href="#" class="btn">VIEW CHALLENGES</a>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              3 000€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-orange.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                3
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                4
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                5
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                6
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                7
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                8
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                9
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                10
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row current">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                55
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-<section class="activeChallenges"><div class="container-fluid"><div class="row mb-20">
-  <div class="col-lg-4">
-    <div class="d-flex align-items-end h-100">
-      <div class="common-style">
-        <b>MY ACTIVE CHALLENGES</b>
+  <div class="col-lg-6 mb-22">
+    <div class="prize-item d-flex flex-column yellow">
+      <div class="challenge-item__award">
+        <span class="reward">
+          PRIZE POOL
+        </span>
+        <b>7 000</b>
+        <span class="common-style">EURO</span>
+      </div>
+      <div class="d-flex w-100 prize-item__row">
+        <div class="col-2-3">
+          <div class="d-flex flex-column">
+            <div class="prize-logo">
+              <img src="./images/fortnite-logo.svg" alt="#">
+            </div>
+            <div class="prize-game__name">
+              <span>WEEKLY</span> MAX Kill
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="challenge-time">
+            <div class="challenge-time__field-name">
+              <b>TIME LEFT</b>
+            </div>
+            <div class="challenge-time__line">
+              <div class="challenge-time__line-amount" style="width: 35%"></div>
+            </div>
+            <div class="challenge-time__timer d-flex">
+              <div class="challenge-time__timer-item">
+                <b>11</b> D
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>09</b> H
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>26</b> M
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>15</b> S
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prize-column">
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-name">
+              #
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="col-name">
+              NAME
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              Kills
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="col-name">
+              PRIZE
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-yellow.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                1
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-1.png" alt="#">
+              </div>
+              Harry Rowe
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              50
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              7 000€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-grey.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                2
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              40
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              3 000€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-orange.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                3
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              22
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                4
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                5
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                6
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                7
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                8
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                9
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                10
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row  current">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                55
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-lg-8">
-    <div class="d-flex">
-      <div class="ml-auto d-flex align-items-end">
-        <a href="#" class="btn _transparent">View All Challenges</a>
+  <div class="col-lg-6 mb-22">
+    <div class="prize-item d-flex flex-column yellow">
+      <div class="challenge-item__award">
+        <span class="reward">
+          PRIZE POOL
+        </span>
+        <b>7 000</b>
+        <span class="common-style">EURO</span>
+      </div>
+      <div class="d-flex w-100 prize-item__row">
+        <div class="col-2-3">
+          <div class="d-flex flex-column">
+            <div class="prize-logo">
+              <img src="./images/apex-logo.svg" alt="#">
+            </div>
+            <div class="prize-game__name">
+              <span>WEEKLY</span> FASTEST KILL
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="challenge-time">
+            <div class="challenge-time__field-name">
+              <b>TIME LEFT</b>
+            </div>
+            <div class="challenge-time__line">
+              <div class="challenge-time__line-amount" style="width: 35%"></div>
+            </div>
+            <div class="challenge-time__timer d-flex">
+              <div class="challenge-time__timer-item">
+                <b>11</b> D
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>09</b> H
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>26</b> M
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>15</b> S
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prize-column">
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-name">
+              #
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="col-name">
+              NAME
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              TIME
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="col-name">
+              PRIZE
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-yellow.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                1
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-1.png" alt="#">
+              </div>
+              Harry Rowe
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              7 000€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-grey.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                2
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              3 000€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-orange.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                3
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                4
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                5
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                6
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                7
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                8
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                9
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                10
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row current">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                55
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              00:01:03
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 mb-22">
+    <div class="prize-item d-flex flex-column yellow">
+      <div class="challenge-item__award">
+        <span class="reward">
+          PRIZE POOL
+        </span>
+        <b>7 000</b>
+        <span class="common-style">EURO</span>
+      </div>
+      <div class="d-flex w-100 prize-item__row">
+        <div class="col-2-3">
+          <div class="d-flex flex-column">
+            <div class="prize-logo">
+              <img src="./images/fortnite-logo.svg" alt="#">
+            </div>
+            <div class="prize-game__name">
+              <span>WEEKLY</span> MAX Kill
+            </div>
+          </div>
+        </div>
+        <div class="col-1-3">
+          <div class="challenge-time">
+            <div class="challenge-time__field-name">
+              <b>TIME LEFT</b>
+            </div>
+            <div class="challenge-time__line">
+              <div class="challenge-time__line-amount" style="width: 35%"></div>
+            </div>
+            <div class="challenge-time__timer d-flex">
+              <div class="challenge-time__timer-item">
+                <b>11</b> D
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>09</b> H
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>26</b> M
+              </div>
+              <div class="challenge-time__timer-item">
+                <b>15</b> S
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prize-column">
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-name">
+              #
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="col-name">
+              NAME
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              Kills
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="col-name">
+              PRIZE
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-yellow.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                1
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-1.png" alt="#">
+              </div>
+              Harry Rowe
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              50
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              7 000€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-grey.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                2
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              40
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              3 000€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <div class="col-award__bg">
+                <img src="./images/award-orange.svg" alt="1st place">
+              </div>
+              <span class="col-award__numb">
+                3
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              22
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                4
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                5
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                6
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                7
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                8
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                9
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                10
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
+        <div class="d-flex w-100 prize-row current">
+          <div class="col-auto-left">
+            <div class="col-award">
+              <span class="col-award__numb">
+                55
+              </span>
+            </div>
+          </div>
+          <div class="col-prize-60">
+            <div class="d-flex align-items-center">
+              <div class="prize-column__img">
+                <img src="./images/user-2.png" alt="#">
+              </div>
+              Roy Bowers
+            </div>
+          </div>
+          <div class="col-prize-15">
+            <div class="col-name">
+              10
+            </div>
+          </div>
+          <div class="col-auto-right">
+            <div class="prize-award">
+              500€
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
- <div class="row activeChallenges-row orange mx-0">
-  <div class="col-lg-4 px-0">
-    <div class="d-flex align-items-center justify-content-between w-100">
-      <div class="d-flex align-items-center">
-        <div class="active-place common-style">
-          40º
-        </div>
-        <div class="d-flex flex-column activeChallenges-item">
-          <div class="active-name common-style">
-            1st MONTH FASTEST KILL
-          </div>
-          <div class="challenge-tags__item">
-            #FASTEST KILL
-          </div>
-        </div>
-      </div>
-      <div class="activeChallenges-logo">
-        <img src="./images/apex-logo.svg" alt="APEX logo">
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-8 px-0">
-    <div class="d-flex align-items-center justify-content-end">
-      <div class="activeChallenges-users d-flex">
-        <div class="active-user">
-          <img src="./images/user-1.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-2.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-3.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-4.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-5.png" alt="#">
-        </div>
-        <div class="active-user">
-          <span>+50</span>
-        </div>
-      </div>
-      <div class="activeChallenges-result common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="activeChallenges-result__numb">
-          00:01:03
-        </div>
-      </div>
-      <div class="activeChallenges-left common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="commonStyle">
-          11D 11:00:50
-        </div>
-      </div>
-      <div class="activeChallenges-left">
-        <div class="activeChallenges-result__title common-style">
-          Rewards
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="activeChallenges-left__result">
-          <svg width="13px" height="13px">
-            <use xlink:href="#icon-orange-coins"></use>
-          </svg>
-          100 / 2000
-        </div>
-      </div>
-      <a href="#" class="btn _transparent _bg-btn">View Challenge</a>
-    </div>
-  </div>
-</div>
-<div class="row activeChallenges-row grey mx-0">
-  <div class="col-lg-4 px-0">
-    <div class="d-flex align-items-center justify-content-between w-100">
-      <div class="d-flex align-items-center">
-        <div class="active-place common-style">
-          40º
-        </div>
-        <div class="d-flex flex-column activeChallenges-item">
-          <div class="active-name common-style">
-            1st MONTH FASTEST KILL
-          </div>
-          <div class="challenge-tags__item">
-            #MAX KILLS
-          </div>
-        </div>
-      </div>
-      <div class="activeChallenges-logo">
-        <img src="./images/apex-logo.svg" alt="APEX logo">
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-8 px-0">
-    <div class="d-flex align-items-center justify-content-end">
-      <div class="activeChallenges-users d-flex">
-        <div class="active-user">
-          <img src="./images/user-1.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-2.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-3.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-4.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-5.png" alt="#">
-        </div>
-        <div class="active-user">
-          <span>+50</span>
-        </div>
-      </div>
-      <div class="activeChallenges-result common-style">
-        <div class="activeChallenges-result__title">
-          Kills
-        </div>
-        <div class="activeChallenges-result__numb">
-          14
-        </div>
-      </div>
-      <div class="activeChallenges-left common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="commonStyle">
-          11D 11:00:50
-        </div>
-      </div>
-      <div class="activeChallenges-left">
-        <div class="activeChallenges-result__title common-style">
-          Rewards
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="activeChallenges-left__result">
-          <svg width="13px" height="13px">
-            <use xlink:href="#icon-grey-coins"></use>
-          </svg>
-          100 / 5000
-        </div>
-      </div>
-      <a href="#" class="btn _transparent _bg-btn">View Challenge</a>
-    </div>
-  </div>
-</div>
-<div class="row activeChallenges-row yellow mx-0">
-  <div class="col-lg-4 px-0">
-    <div class="d-flex align-items-center justify-content-between w-100">
-      <div class="d-flex align-items-center">
-        <div class="active-place common-style">
-          40º
-        </div>
-        <div class="d-flex flex-column activeChallenges-item">
-          <div class="active-name common-style">
-            1st MONTH FASTEST KILL
-          </div>
-          <div class="challenge-tags__item">
-            #FASTEST KILL
-          </div>
-        </div>
-      </div>
-      <div class="activeChallenges-logo">
-        <img src="./images/apex-logo.svg" alt="APEX logo">
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-8 px-0">
-    <div class="d-flex align-items-center justify-content-end">
-      <div class="activeChallenges-users d-flex">
-        <div class="active-user">
-          <img src="./images/user-1.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-2.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-3.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-4.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-5.png" alt="#">
-        </div>
-        <div class="active-user">
-          <span>+50</span>
-        </div>
-      </div>
-      <div class="activeChallenges-result common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="activeChallenges-result__numb">
-          00:01:03
-        </div>
-      </div>
-      <div class="activeChallenges-left common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="commonStyle">
-          11D 11:00:50
-        </div>
-      </div>
-      <div class="activeChallenges-left">
-        <div class="activeChallenges-result__title common-style">
-          Rewards
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="activeChallenges-left__result">
-          <svg width="13px" height="13px">
-            <use xlink:href="#icon-yellow-coins"></use>
-          </svg>
-          100 / 2000
-        </div>
-      </div>
-      <a href="#" class="btn _transparent _bg-btn">View Challenge</a>
-    </div>
-  </div>
-</div>
-<div class="row activeChallenges-row orange mx-0">
-  <div class="col-lg-4 px-0">
-    <div class="d-flex align-items-center justify-content-between w-100">
-      <div class="d-flex align-items-center">
-        <div class="active-place common-style">
-          40º
-        </div>
-        <div class="d-flex flex-column activeChallenges-item">
-          <div class="active-name common-style">
-            1st MONTH FASTEST KILL
-          </div>
-          <div class="challenge-tags__item">
-            #FASTEST KILL
-          </div>
-        </div>
-      </div>
-      <div class="activeChallenges-logo">
-        <img src="./images/apex-logo.svg" alt="APEX logo">
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-8 px-0">
-    <div class="d-flex align-items-center justify-content-end">
-      <div class="activeChallenges-users d-flex">
-        <div class="active-user">
-          <img src="./images/user-1.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-2.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-3.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-4.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-5.png" alt="#">
-        </div>
-        <div class="active-user">
-          <span>+50</span>
-        </div>
-      </div>
-      <div class="activeChallenges-result common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="activeChallenges-result__numb">
-          00:01:03
-        </div>
-      </div>
-      <div class="activeChallenges-left common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="commonStyle">
-          11D 11:00:50
-        </div>
-      </div>
-      <div class="activeChallenges-left">
-        <div class="activeChallenges-result__title common-style">
-          Rewards
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="activeChallenges-left__result">
-          <svg width="13px" height="13px">
-            <use xlink:href="#icon-orange-coins"></use>
-          </svg>
-          100 / 2000
-        </div>
-      </div>
-      <a href="#" class="btn _transparent _bg-btn">View Challenge</a>
-    </div>
-  </div>
-</div>
-<div class="row activeChallenges-row grey mx-0">
-  <div class="col-lg-4 px-0">
-    <div class="d-flex align-items-center justify-content-between w-100">
-      <div class="d-flex align-items-center">
-        <div class="active-place common-style">
-          40º
-        </div>
-        <div class="d-flex flex-column activeChallenges-item">
-          <div class="active-name common-style">
-            1st MONTH FASTEST KILL
-          </div>
-          <div class="challenge-tags__item">
-            #FASTEST KILL
-          </div>
-        </div>
-      </div>
-      <div class="activeChallenges-logo">
-        <img src="./images/apex-logo.svg" alt="APEX logo">
-      </div>
-    </div>
-  </div>
-  <div class="col-lg-8 px-0">
-    <div class="d-flex align-items-center justify-content-end">
-      <div class="activeChallenges-users d-flex">
-        <div class="active-user">
-          <img src="./images/user-1.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-2.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-3.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-4.png" alt="#">
-        </div>
-        <div class="active-user">
-          <img src="./images/user-5.png" alt="#">
-        </div>
-        <div class="active-user">
-          <span>+50</span>
-        </div>
-      </div>
-      <div class="activeChallenges-result common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="activeChallenges-result__numb">
-          00:01:03
-        </div>
-      </div>
-      <div class="activeChallenges-left common-style">
-        <div class="activeChallenges-result__title">
-          Time
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="commonStyle">
-          11D 11:00:50
-        </div>
-      </div>
-      <div class="activeChallenges-left">
-        <div class="activeChallenges-result__title common-style">
-          Rewards
-        </div>
-        <div class="challenge-time__line">
-          <div class="challenge-time__line-amount" style="width: 35%"></div>
-        </div>
-        <div class="activeChallenges-left__result">
-          <svg width="13px" height="13px">
-            <use xlink:href="#icon-grey-coins"></use>
-          </svg>
-          100 / 2000
-        </div>
-      </div>
-      <a href="#" class="btn _transparent _bg-btn">View Challenge</a>
-    </div>
-  </div>
-</div>
-</div></section><section class="helpBlock">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="helpBlock-item">
-          <div class="helpBlock-item__content">
-            <div class="helpBlock-item__title">
-              DO YOU NEED HELP?
-            </div>
-            <div class="helpBlock-item__text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <p>Maecenas varius tortor nibh, sit amet tempor nibh finibus et. </p>
-              <p>Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. </p>
-            </div>
-            <a href="#" class="btn mt-auto">View Faqs</a>
-          </div>
-
-          <div class="helpBlock-item__img">
-            <img src="./images/decor.svg" alt="#">
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="helpBlock-item">
-          <div class="helpBlock-item__content">
-            <div class="helpBlock-item__title">
-              DO YOU NEED HELP?
-            </div>
-            <div class="helpBlock-item__text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor
-                nibh finibus et. Aenean eu enim justo. Vestibulum aliquam hendrerit molestie. </p>
-            </div>
-            <a href="#" class="btn mt-auto">View Faqs</a>
-          </div>
-          <div class="helpBlock-item__img">
-            <img src="./images/decor-guy.png" alt="#">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
- <section class="copyright">
+</div></section><section class="copyright">
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6">
@@ -1723,29 +2700,11 @@
   </div>
 </section>
 </div></div></div></section><script src="./js/main.js"></script><script>$(document).ready(function () {
-      $('.available-slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        nextArrow: '.available-games .next',
-        prevArrow: '.available-games .previous',
-        infinite: false
-      });
-    });
-    $(document).ready(function () {
       $('.prize-slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         nextArrow: '.leaderBoards .next',
         prevArrow: '.leaderBoards .previous',
-        infinite: false
-      });
-    });
-    $(document).ready(function () {
-      $('.games-slider').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        nextArrow: '.games .next',
-        prevArrow: '.games .previous',
         infinite: false
       });
     });

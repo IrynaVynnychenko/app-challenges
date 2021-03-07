@@ -5,6 +5,8 @@
   .breadcrumbs-title {
     margin-top: 20px;
     font-size: 25px; }
+    .breadcrumbs-title span {
+      text-transform: uppercase; }
     .breadcrumbs-title b {
       margin-right: 10px; }
 

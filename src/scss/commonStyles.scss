@@ -595,3 +595,73 @@ select {
 .col-1-3 {
     width: calc(100% / 3 * 1);
 }
+
+.weeklyChallenges {
+    .leaderBoards .row {
+        &:first-child {
+            display: none;
+        }
+
+        &:nth-child(2) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.challengesGame {
+    z-index: 1;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0px;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-image: url('../../images/league-of-legends-background.png');
+        height: 808.4px;
+        z-index: 2;
+        width: 100%;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        opacity: 0.25;
+        background-image: linear-gradient(to right, rgba(3, 6, 22, 0) 69%, #030616), linear-gradient(to bottom, rgba(3, 6, 22, 0), rgba(3, 6, 22, 0.02) 52%, #030616 97%), radial-gradient(circle at 56% 54%, rgba(3, 6, 22, 0), #030616 75%);
+    }
+
+    .carousel {
+        .row:first-child {
+            .col-lg-8 {
+                >div {
+                    >div:nth-child(2) {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .prize-item {
+        .prize-logo {
+            display: none;
+        }
+        .prize-game__name {
+            span {
+                display: flex;
+            }
+        }
+    }
+    .challenge-item__body-bg {
+        svg image {
+            display: none;
+        }
+    }
+}

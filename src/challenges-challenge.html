@@ -10,29 +10,25 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./components/leftMenu/leftMenu.css">
   <link rel="stylesheet" href="./components/topBar/topBar.css">
-  <link rel="stylesheet" href="./components/bottomBar/bottomBar.css">
-  <link rel="stylesheet" href="./components/leaderBoards/leaderBoards.css">
+  <link rel="stylesheet" href="./components/breadcrumbs/breadcrumbs.css">
+  <link rel="stylesheet" href="./components/endedChallenge/endedChallenge.css">
   <link rel="stylesheet" href="./components/copyright/copyright.css">
 </head>
 
 <body>
 
-  <section class="page weeklyChallenges">
+  <section class="page challengesGame">
     <div class="container-fluid">
       <div class="row">
         @@include('./components/leftMenu/index.html')
         <div class="page-right page-bg ml-auto">
           @@include('./components/topBar/index.html')
-          @@include('./components/bottomBar/index.html')
+          @@include('./components/breadcrumbs/index.html')
 
-          <section class="leaderBoards">
-            <div class="container-fluid">
-              @@include('./components/leaderBoardsNotFilter/index.html')
-              @@include('./components/leaderBoards/index.html')
-            </div>
-          </section>
+          @@include('./components/endedChallenge/index.html')
 
           @@include('./components/copyright/index.html')
+
         </div>
       </div>
     </div>
@@ -46,6 +42,15 @@
         slidesToScroll: 1,
         nextArrow: '.leaderBoards .next',
         prevArrow: '.leaderBoards .previous',
+        infinite: false
+      });
+    });
+    $(document).ready(function () {
+      $('.challenge-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        nextArrow: '.carousel .next',
+        prevArrow: '.carousel .previous',
         infinite: false
       });
     });
