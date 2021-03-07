@@ -548,6 +548,7 @@ select {
         line-height: 1.67;
         color: #ffffff;
         margin-bottom: 10px;
+        text-transform: uppercase;
     }
 
     &__line {
@@ -610,7 +611,8 @@ select {
 
 .challengesGame {
     z-index: 1;
-
+    position: relative;
+    
     &:after {
         position: absolute;
         content: '';
@@ -653,12 +655,14 @@ select {
         .prize-logo {
             display: none;
         }
+
         .prize-game__name {
             span {
                 display: flex;
             }
         }
     }
+
     .challenge-item__body-bg {
         svg image {
             display: none;
