@@ -100,7 +100,8 @@
     background-color: rgba(255, 255, 255, 0.25);
     color: #fff; }
   .prize-row .col-prize-60 {
-    text-align: left; }
+    text-align: left;
+    font-weight: 600; }
   .prize-row:not(:first-child) {
     padding: 8px 22px;
     cursor: pointer; }

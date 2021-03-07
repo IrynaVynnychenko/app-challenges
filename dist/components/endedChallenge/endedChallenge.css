@@ -112,36 +112,28 @@
     border-radius: 4px;
     border-style: solid;
     border-width: 3px;
-    border-image-source: linear-gradient(to top, #030304, #c0c0c0);
+    border-image-source: linear-gradient(to top, #030304, #ff8003 33%);
     border-image-slice: 1;
     z-index: 1;
     background-origin: border-box;
     background-clip: content-box, border-box;
-    border: double 4px transparent; }
+    padding-top: 76px; }
     .ended-places__column.orange .ended-places__body:before {
       position: absolute;
       content: '';
-      background-image: radial-gradient(circle at 52% 46%, rgba(3, 6, 22, 0), rgba(185, 185, 186, 0.96) 89%, #c0c0c0 89%);
+      background-image: radial-gradient(circle at 60% 41%, rgba(3, 6, 22, 0), #ff8003 105%);
       width: 100%;
       height: 100%;
       z-index: 2;
       top: 0px;
       left: 0px;
-      border-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
       z-index: 3; }
-    .ended-places__column.orange .ended-places__body:after {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 100%;
-      border-radius: 5px;
-      background-image: linear-gradient(to bottom, #c0c0c0, #030616);
-      z-index: 3;
-      top: 0px;
-      left: 0px;
-      z-index: 2; }
   .ended-places__column.orange .ended-places__award {
     background-image: url("../../images/award-orange.svg"); }
+  .ended-places__column.orange .ended-places__amount {
+    color: #ff8003; }
   .ended-places__column.yellow .ended-places__body {
     border-radius: 4px;
     border-style: solid;
@@ -150,7 +142,8 @@
     border-image-slice: 1;
     z-index: 1;
     background-origin: border-box;
-    background-clip: content-box, border-box; }
+    background-clip: content-box, border-box;
+    padding-top: 90px; }
     .ended-places__column.yellow .ended-places__body:before {
       position: absolute;
       content: '';
@@ -160,7 +153,8 @@
       z-index: 2;
       top: 0px;
       left: 0px;
-      border-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
       z-index: 3; }
   .ended-places__column.yellow .ended-places__award {
     background-image: url("../../images/award-yellow.svg");
@@ -169,16 +163,21 @@
     max-width: 130px;
     min-height: 112px;
     left: calc(50% - 65px); }
+  .ended-places__column.yellow .ended-places__amount {
+    color: #f5bb0c;
+    font-size: 40px;
+    line-height: 1.25; }
+  .ended-places__column.yellow .ended-places__prize {
+    margin-bottom: 26px; }
   .ended-places__column.grey .ended-places__body {
     border-radius: 4px;
     border-style: solid;
     border-width: 3px;
     border-image-source: linear-gradient(to top, #030304, #c0c0c0);
-    border-image-slice: 1;
+    border-image-slice: 3;
     z-index: 1;
     background-origin: border-box;
-    background-clip: content-box, border-box;
-    border-image-outset: 4px; }
+    background-clip: content-box, border-box; }
     .ended-places__column.grey .ended-places__body:before {
       position: absolute;
       content: '';
@@ -188,7 +187,8 @@
       z-index: 2;
       top: 0px;
       left: 0px;
-      border-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
       z-index: 3; }
     .ended-places__column.grey .ended-places__body:after {
       position: absolute;
@@ -201,6 +201,8 @@
       top: 0px;
       left: 0px;
       z-index: 2; }
+  .ended-places__column.grey .ended-places__amount {
+    color: #c0c0c0; }
   .ended-places__column.grey .ended-places__award {
     background-image: url("../../images/award-grey.svg"); }
   .ended-places__column:first-child {
@@ -211,6 +213,12 @@
     margin-right: 16px; }
   .ended-places__column:nth-child(3) {
     padding-top: 46px; }
+
+.ended-places__prize {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #777777; }
 
 .ended-places__award {
   background-image: url("../../images/award-orange.svg");
@@ -240,9 +248,14 @@
 
 .ended-places__body {
   position: relative;
-  padding: 130px 62px 20px;
+  padding: 130px 28px 20px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: center; }
+  .ended-places__body-wrapper {
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden; }
   .ended-places__body-price {
     margin-top: auto;
     z-index: 5;
@@ -257,14 +270,84 @@
     z-index: 4; }
     .ended-places__body-img img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      object-fit: cover; }
 
 .ended-places__row {
-  height: 100%; }
+  height: 100%;
+  z-index: 1;
+  position: relative; }
 
 .ended-places__amount {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: bold; }
+  .ended-places__amount span {
+    margin-top: 28px; }
+
+.ended-places__name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5; }
+
+.ended-places__info {
+  font-size: 12px;
+  line-height: 1.67;
+  color: #ffffff; }
+
+.ended .prize-item {
+  margin-top: -10px;
+  position: relative;
+  z-index: 2;
+  background-color: #181615;
+  border-image-source: linear-gradient(to top, #030304, #f5bb0c); }
+  .ended .prize-item:before {
+    display: none; }
+
+.ended .prize-row:nth-child(3) {
+  color: #c0c0c0; }
+  .ended .prize-row:nth-child(3) .col-auto-right {
+    color: #c0c0c0; }
+
+.prize-overflow {
+  max-height: 320px;
+  overflow-y: auto;
+  margin-top: 12px;
+  box-sizing: border-box; }
+  .prize-overflow .col-auto-right {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.88; }
+  .prize-overflow .prize-row {
+    text-transform: none; }
+    .prize-overflow .prize-row .col-prize-60 {
+      font-weight: 500; }
+    .prize-overflow .prize-row:nth-child(2) {
+      color: #c0c0c0; }
+      .prize-overflow .prize-row:nth-child(2) .col-auto-right {
+        color: #c0c0c0; }
+    .prize-overflow .prize-row:nth-child(4) {
+      color: #c0c0c0; }
+      .prize-overflow .prize-row:nth-child(4) .col-auto-right {
+        color: #c0c0c0; }
+
+.simplebar-scrollbar {
+  right: 2px;
+  width: 7px;
+  border-radius: 10.5;
+  height: 60px; }
+  .simplebar-scrollbar::before {
+    background-image: linear-gradient(to bottom, rgba(202, 153, 44, 0) 0%, #f5bb0c 100%);
+    right: -35px;
+    width: 100%;
+    border-radius: 10.5; }
+
+.simplebar-track::before {
+  box-shadow: 0 0 2px 0 rgba(192, 192, 192, 0.5), inset 0 1px 6px 0 rgba(192, 192, 192, 0.36);
+  background-color: #201e2b; }

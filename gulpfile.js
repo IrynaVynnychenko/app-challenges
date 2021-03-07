@@ -92,6 +92,7 @@ gulp.task("compile-sass", function () {
     return gulp
         .src([
             "node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "node_modules/simplebar/dist/simplebar.css",
             "./src/scss/*.css",
             "./src/scss/*.scss"
         ])
@@ -176,7 +177,8 @@ gulp.task("scripts", function () {
             "./src/js/jquery-1.11.0.min.js",
             "./src/js/jquery-migrate-1.2.1.min.js",
             "./src/js/slick.min.js",
-            "./src/js/common.min.js"
+            "./src/js/common.min.js",
+            "node_modules/simplebar/dist/simplebar.min.js"
         ])
         .pipe(concat("main.js"))
         .pipe(gulp.dest("./dist/js/"))

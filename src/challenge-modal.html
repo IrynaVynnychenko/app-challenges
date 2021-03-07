@@ -10,22 +10,32 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./components/leftMenu/leftMenu.css">
   <link rel="stylesheet" href="./components/topBar/topBar.css">
-  <link rel="stylesheet" href="./components/breadcrumbs/breadcrumbs.css">
-  <link rel="stylesheet" href="./components/leaderBoards/leaderBoards.css">
-  <link rel="stylesheet" href="./components/endedChallenge/endedChallenge.css">
+  <link rel="stylesheet" href="./components/bottomBar/bottomBar.css">
+  <link rel="stylesheet" href="./components/carousel/carousel.css">
+  <link rel="stylesheet" href="./components/games/games.css">
+  <link rel="stylesheet" href="./components/newChallengesNotFilter/newChallengesNotFilter.css">
+  <link rel="stylesheet" href="./components/newChallengesViaFilter/newChallengesViaFilter.css">
   <link rel="stylesheet" href="./components/copyright/copyright.css">
 </head>
 
 <body>
 
-  <section class="page challengesGame">
+  <section class="page">
     <div class="container-fluid">
       <div class="row">
         @@include('./components/leftMenu/index.html')
         <div class="page-right page-bg ml-auto">
           @@include('./components/topBar/index.html')
-          @@include('./components/breadcrumbs/index.html')
-          @@include('./components/endedChallenge/index.html')
+          @@include('./components/bottomBar/index.html')
+
+          <section class="carousel">
+            <div class="container-fluid">
+              @@include('./components/newChallengesViaFilter/index.html')
+              @@include('./components/carousel/index.html')
+            </div>
+          </section>
+
+          @@include('./components/games/index.html')
           @@include('./components/copyright/index.html')
         </div>
       </div>
@@ -35,11 +45,11 @@
   <script src="./js/main.js"></script>
   <script>
     $(document).ready(function () {
-      $('.prize-slider').slick({
-        slidesToShow: 2,
+      $('.games-slider').slick({
+        slidesToShow: 6,
         slidesToScroll: 1,
-        nextArrow: '.leaderBoards .next',
-        prevArrow: '.leaderBoards .previous',
+        nextArrow: '.games .next',
+        prevArrow: '.games .previous',
         infinite: false
       });
     });
@@ -65,15 +75,6 @@
     menu.addEventListener('mouseleave', () => {
       menu.classList.remove('visible');
     });
-  </script>
-
-  <script>
-    const simpleBar = new SimpleBar(document.getElementByClass('prize-overflow'), {
-      scrollbarMinSize: '60px'
-    });
-    
-    simpleBar.recalculate();
-    simpleBar.getScrollElement();
   </script>
 
 </body>
