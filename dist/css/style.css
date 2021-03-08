@@ -8144,7 +8144,7 @@ select {
 
 /* Arrow */
 .select::after {
-  content: url("../../images/select-arrow.svg");
+  content: url("./../images/select-arrow.svg");
   position: absolute;
   top: 1px;
   right: 8px;
@@ -8207,7 +8207,7 @@ select {
   .challenge-item.grey .challenge-amount__numb {
     color: #c0c0c0; }
   .challenge-item.grey .challenge-item__award {
-    background-image: url("../../images/award-grey.svg"); }
+    background-image: url("./../images/award-grey.svg"); }
   .challenge-item.grey .challenge-item__body {
     border-image-source: linear-gradient(to top, #201e3b, #c0c0c0);
     background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #c0c0c0); }
@@ -8216,14 +8216,14 @@ select {
   .challenge-item.yellow .challenge-amount__numb {
     color: #f5bb0c; }
   .challenge-item.yellow .challenge-item__award {
-    background-image: url("../../images/award-yellow.svg"); }
+    background-image: url("./../images/award-yellow.svg"); }
   .challenge-item.yellow .challenge-item__body {
     border-image-source: linear-gradient(to top, #201e3b, #f5bb0c);
     background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #f5bb0c); }
     .challenge-item.yellow .challenge-item__body:hover {
       box-shadow: 0 0 20px 0 #f5bb0c; }
   .challenge-item__award {
-    background-image: url("../../images/award-orange.svg");
+    background-image: url("./../images/award-orange.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -8372,7 +8372,7 @@ select {
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    background-image: url("../../images/league-of-legends-background.png");
+    background-image: url("./../images/league-of-legends-background.png");
     height: 808.4px;
     z-index: 2;
     width: 100%; }

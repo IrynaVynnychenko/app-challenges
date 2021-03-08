@@ -304,7 +304,7 @@ select {
 
 /* Arrow */
 .select::after {
-    content: url('../../images/select-arrow.svg');
+    content: url('./../images/select-arrow.svg');
     position: absolute;
     top: 1px;
     right: 8px;
@@ -385,7 +385,7 @@ select {
         }
 
         .challenge-item__award {
-            background-image: url('../../images/award-grey.svg');
+            background-image: url('./../images/award-grey.svg');
         }
 
         .challenge-item__body {
@@ -404,7 +404,7 @@ select {
         }
 
         .challenge-item__award {
-            background-image: url('../../images/award-yellow.svg');
+            background-image: url('./../images/award-yellow.svg');
         }
 
         .challenge-item__body {
@@ -418,7 +418,7 @@ select {
     }
 
     &__award {
-        background-image: url('../../images/award-orange.svg');
+        background-image: url('./../images/award-orange.svg');
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
@@ -621,7 +621,7 @@ select {
         background-size: contain;
         background-position: right;
         background-repeat: no-repeat;
-        background-image: url('../../images/league-of-legends-background.png');
+        background-image: url('./../images/league-of-legends-background.png');
         height: 808.4px;
         z-index: 2;
         width: 100%;
