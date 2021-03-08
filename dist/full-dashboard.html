@@ -148,7 +148,13 @@
   <a href="#" class="help">
     Do You Need Help?
   </a>
+  <div class="menu-btn">
+    <svg width="26px" height="26px">
+      <use xlink:href="#icon-menu"></use>
+    </svg>
+  </div>
 </div>
+
 <div class="page-right page-bg ml-auto"><section class="topBar">
   <div class="container-fluid">
     <div class="row">
@@ -3552,7 +3558,7 @@
  <section class="helpBlock">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="helpBlock-item">
           <div class="helpBlock-item__content">
             <div class="helpBlock-item__title">
@@ -3571,7 +3577,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div class="col-xl-6">
         <div class="helpBlock-item">
           <div class="helpBlock-item__content">
             <div class="helpBlock-item__title">
@@ -3606,7 +3612,13 @@
         slidesToScroll: 1,
         nextArrow: '.leaderBoards .next',
         prevArrow: '.leaderBoards .previous',
-        infinite: false
+        infinite: false,
+        responsive: [{
+          breakpoint: 1572,
+          settings: {
+            slidesToShow: 1,
+          }
+        }]
       });
     });
     $(document).ready(function () {
@@ -3615,7 +3627,20 @@
         slidesToScroll: 1,
         nextArrow: '.games .next',
         prevArrow: '.games .previous',
-        infinite: false
+        infinite: false,
+        responsive: [{
+            breakpoint: 1900,
+            settings: {
+              slidesToShow: 4,
+            }
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 3,
+            }
+          }
+        ]
       });
     });
     $(document).ready(function () {
@@ -3624,7 +3649,13 @@
         slidesToScroll: 1,
         nextArrow: '.carousel .next',
         prevArrow: '.carousel .previous',
-        infinite: false
+        infinite: false,
+        responsive: [{
+          breakpoint: 1650,
+          settings: {
+            slidesToShow: 3,
+          }
+        }]
       });
     });</script><script>const menuBtn = document.querySelector('.arrow-down');
     const menu = document.querySelector('.part-menu');
@@ -3636,14 +3667,14 @@
     menu.addEventListener('mouseleave', () => {
       menu.classList.remove('visible');
     });</script><script>const notifBtn = document.querySelector('.notif-popup');
-  const notifBlock = document.querySelector('.notifBlock');
+    const notifBlock = document.querySelector('.notifBlock');
 
-  notifBtn.addEventListener('click', () => {
-    notifBlock.classList.toggle('visible');
-    notifBtn.classList.toggle('active');
-  });
+    notifBtn.addEventListener('click', () => {
+      notifBlock.classList.toggle('visible');
+      notifBtn.classList.toggle('active');
+    });
 
-  menu.addEventListener('mouseleave', () => {
-    notifBlock.classList.remove('visible');
-    notifBtn.classList.remove('active');
-  });</script></body></html>
+    menu.addEventListener('mouseleave', () => {
+      notifBlock.classList.remove('visible');
+      notifBtn.classList.remove('active');
+    });</script></body></html>
