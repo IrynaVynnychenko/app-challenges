@@ -16,9 +16,10 @@
   <link rel="stylesheet" href="./components/newChallengesNotFilter/newChallengesNotFilter.css">
   <link rel="stylesheet" href="./components/newChallengesViaFilter/newChallengesViaFilter.css">
   <link rel="stylesheet" href="./components/copyright/copyright.css">
+  <link rel="stylesheet" href="./components/modal/modal.css">
 </head>
 
-<body>
+<body class="body-modal">
 
   <section class="page">
     <div class="container-fluid">
@@ -42,6 +43,8 @@
     </div>
   </section>
 
+  @@include('./components/modal/index.html')
+
   <script src="./js/main.js"></script>
   <script>
     $(document).ready(function () {
@@ -62,6 +65,16 @@
         infinite: false
       });
     });
+    $(document).ready(function () {
+      $('.modal-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        infinite: true
+      });
+    });
+    
   </script>
 
   <script>
@@ -89,6 +102,16 @@
     menu.addEventListener('mouseleave', () => {
       notifBlock.classList.remove('visible');
       notifBtn.classList.remove('active');
+    });
+  </script>
+
+  <script>
+    const closeBtns = document.querySelectorAll('.modal-close');
+
+    closeBtns.forEach(item => {
+      item.addEventListener('click', () => {
+        document.querySelector('.modal-bg').style.display = 'none';
+      });
     });
   </script>
 
