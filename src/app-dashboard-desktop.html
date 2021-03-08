@@ -41,7 +41,7 @@
               @@include('./components/activeChallenges/index.html')
             </div>
           </section>
-          
+
           @@include('./components/helpBlock/index.html')
           @@include('./components/copyright/index.html')
         </div>
@@ -99,6 +99,21 @@
 
     menu.addEventListener('mouseleave', () => {
       menu.classList.remove('visible');
+    });
+  </script>
+
+  <script>
+    const notifBtn = document.querySelector('.notif-popup');
+    const notifBlock = document.querySelector('.notifBlock');
+
+    notifBtn.addEventListener('click', () => {
+      notifBlock.classList.toggle('visible');
+      notifBtn.classList.toggle('active');
+    });
+
+    menu.addEventListener('mouseleave', () => {
+      notifBlock.classList.remove('visible');
+      notifBtn.classList.remove('active');
     });
   </script>
 

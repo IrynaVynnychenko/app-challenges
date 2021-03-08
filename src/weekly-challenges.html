@@ -64,6 +64,21 @@
     });
   </script>
 
+  <script>
+    const notifBtn = document.querySelector('.notif-popup');
+    const notifBlock = document.querySelector('.notifBlock');
+
+    notifBtn.addEventListener('click', () => {
+      notifBlock.classList.toggle('visible');
+      notifBtn.classList.toggle('active');
+    });
+
+    menu.addEventListener('mouseleave', () => {
+      notifBlock.classList.remove('visible');
+      notifBtn.classList.remove('active');
+    });
+  </script>
+
 </body>
 
 </html>

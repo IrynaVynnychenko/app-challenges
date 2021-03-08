@@ -164,7 +164,7 @@
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </a>
-            <a href="javascript:void(0)" class="topBar-info__item active">
+            <div href="javascript:void(0)" class="topBar-info__item notif-popup">
               <svg width="15px" height="18px">
                 <use xlink:href="#icon-notif"></use>
               </svg>
@@ -175,7 +175,7 @@
                   </div>
                   <div class="clear">Clear All</div>
                 </div>
-                <div class="d-flex align-items-start justify-content-between notifBlock-row notRead">
+                <a href="#" class="d-flex align-items-start justify-content-between notifBlock-row notRead">
                   <div class="notifBlock-row__img">
                     <svg width="13px" height="20px">
                       <use xlink:href="#icon-svg-2"></use>
@@ -186,7 +186,7 @@
                       Apex Legends
                     </div>
                     <div class="notifBlock-row__type">
-                      1st <span>Month most DAMAGE</span> 
+                      1st <span>Month most DAMAGE</span>
                     </div>
                     <div class="notifBlock-row__simple">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -196,10 +196,12 @@
                     <div class="notifBlock-row__date-item">
                       1 Day
                     </div>
-                    <i></i>
+                    <span>
+                      <i></i>
+                    </span>
                   </div>
-                </div>
-                <div class="d-flex align-items-start justify-content-between notifBlock-row">
+                </a>
+                <a href="#" class="d-flex align-items-start justify-content-between notifBlock-row">
                   <div class="notifBlock-row__img">
                     <svg width="13px" height="20px">
                       <use xlink:href="#icon-svg-2"></use>
@@ -210,7 +212,7 @@
                       Apex Legends
                     </div>
                     <div class="notifBlock-row__type">
-                      1st <span>Month most DAMAGE</span> 
+                      1st <span>Month most DAMAGE</span>
                     </div>
                     <div class="notifBlock-row__simple">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -220,11 +222,13 @@
                     <div class="notifBlock-row__date-item">
                       1 Day
                     </div>
-                    <i></i>
+                    <span>
+                      <i></i>
+                    </span>
                   </div>
-                </div>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
           <div class="client d-flex flex-column">
             <div class="d-flex align-items-center h-100">
@@ -276,7 +280,6 @@
     </div>
   </div>
 </section>
-
  
 <section class="bottomBar">
   <div class="bottomBar-bg">
@@ -1904,4 +1907,15 @@
 
     menu.addEventListener('mouseleave', () => {
       menu.classList.remove('visible');
+    });</script><script>const notifBtn = document.querySelector('.notif-popup');
+    const notifBlock = document.querySelector('.notifBlock');
+
+    notifBtn.addEventListener('click', () => {
+      notifBlock.classList.toggle('visible');
+      notifBtn.classList.toggle('active');
+    });
+
+    menu.addEventListener('mouseleave', () => {
+      notifBlock.classList.remove('visible');
+      notifBtn.classList.remove('active');
     });</script></body></html>

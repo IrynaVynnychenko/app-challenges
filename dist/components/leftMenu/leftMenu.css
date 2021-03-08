@@ -33,7 +33,8 @@
     align-items: center;
     margin-bottom: 22px;
     justify-content: space-between;
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.35s; }
     .menu-list__item:hover {
       color: #F5BB0C; }
       .menu-list__item:hover .menu-list__item-row {
