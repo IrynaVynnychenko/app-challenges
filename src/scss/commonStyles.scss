@@ -91,6 +91,10 @@ body {
     }
 }
 
+a {
+    transition: all 0.35s;
+}
+
 :focus {
     outline: none !important;
 }
@@ -612,7 +616,7 @@ select {
 .challengesGame {
     z-index: 1;
     position: relative;
-    
+
     &:after {
         position: absolute;
         content: '';

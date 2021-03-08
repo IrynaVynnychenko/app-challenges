@@ -32,7 +32,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 22px;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5); }
+    .menu-list__item:hover {
+      color: #F5BB0C; }
+      .menu-list__item:hover .menu-list__item-row {
+        opacity: 1; }
+      .menu-list__item:hover .menu-list__link {
+        color: #F5BB0C; }
     .menu-list__item-row {
       opacity: 0.5; }
       .menu-list__item-row.current {
@@ -47,7 +54,7 @@
       text-align: center; }
       .menu-list__item span.active {
         background-color: #f5bb0c;
-        color: rgba(255, 255, 255, 0.5); }
+        color: white; }
 
 .help {
   margin-top: auto;
@@ -55,6 +62,8 @@
   line-height: 1.57;
   color: #f5bb0c;
   text-align: center; }
+  .help:hover {
+    color: #E0A929; }
 
 .icon {
   width: 24px;

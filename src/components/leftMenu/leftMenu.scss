@@ -42,8 +42,20 @@
     align-items: center;
     margin-bottom: 22px;
     justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5);
+    &:hover {
+      color: #F5BB0C;
+      .menu-list__item-row {
+        opacity: 1;
+      }
+      .menu-list__link {
+        color: #F5BB0C;
+      }
+    }
+
     &-row {
       opacity: 0.5;
+
       &.current {
         opacity: 1;
       }
@@ -57,10 +69,10 @@
       font-weight: bold;
       line-height: 1.6;
       text-align: center;
-      
+
       &.active {
         background-color: #f5bb0c;
-        color: rgba(255, 255, 255, 0.5);
+        color: rgba(255, 255, 255, 1);
       }
     }
   }
@@ -72,6 +84,10 @@
   line-height: 1.57;
   color: #f5bb0c;
   text-align: center;
+
+  &:hover {
+    color: #E0A929;
+  }
 }
 
 .icon {

@@ -7978,6 +7978,9 @@ body {
   .pages-list a:hover {
     color: #333; }
 
+a {
+  transition: all 0.35s; }
+
 :focus {
   outline: none !important; }
 
