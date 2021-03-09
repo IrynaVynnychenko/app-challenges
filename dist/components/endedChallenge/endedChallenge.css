@@ -72,7 +72,8 @@
         font-size: 20px;
         font-weight: bold;
         line-height: 1.5;
-        margin-bottom: 32px; }
+        margin-bottom: 32px;
+        text-align: center; }
       @media (max-width: 576px) {
         .ended-timer .challenge-time__timer {
           flex-wrap: wrap;
