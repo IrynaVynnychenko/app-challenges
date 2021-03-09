@@ -416,9 +416,9 @@ select {
     background-color: #fff;
     position: relative;
     cursor: pointer;
-    border-image-source: linear-gradient(to top, #201e3b, #c0c0c0);
-    border-image-slice: 1;
-    background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #c0c0c0);
+    // border-image-source: linear-gradient(to top, #201e3b, #c0c0c0);
+    // border-image-slice: 1;
+    // background-image: linear-gradient(to bottom, #201e2b, #201e2b), linear-gradient(to top, #201e3b, #c0c0c0);
     color: #fff;
     display: flex;
     width: 100%;
