@@ -8137,6 +8137,10 @@ select {
   text-transform: uppercase;
   background-image: none;
   padding: 10px 40px 10px 20px; }
+  @media (max-width: 576px) {
+    select {
+      padding-right: 20px;
+      padding-left: 10px; } }
 
 /* Remove IE arrow */
 select::-ms-expand {
@@ -8181,9 +8185,16 @@ select {
 .select:hover::after {
   color: #f39c12; }
 
+@media (max-width: 575px) {
+  .activeChallenges ._transparent {
+    margin-top: 12px; } }
+
 .activeChallenges-item {
   margin-left: 26px;
   justify-content: center; }
+  @media (max-width: 576px) {
+    .activeChallenges-item {
+      margin-left: 12px; } }
   .activeChallenges-item .active-name {
     font-weight: bold;
     color: #ff8003;

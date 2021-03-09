@@ -143,6 +143,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
             settings: {
               slidesToShow: 3,
             }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+            }
           }
         ]
       });

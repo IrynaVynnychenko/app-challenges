@@ -300,6 +300,10 @@ select {
     text-transform: uppercase;
     background-image: none;
     padding: 10px 40px 10px 20px;
+    @media(max-width: 576px) {
+        padding-right: 20px;
+        padding-left: 10px;
+    }
 }
 
 /* Remove IE arrow */
@@ -350,9 +354,18 @@ select {
     color: #f39c12;
 }
 
+.activeChallenges ._transparent {
+    @media(max-width: 575px) {
+        margin-top: 12px;
+    }
+}
+
 .activeChallenges-item {
     margin-left: 26px;
     justify-content: center;
+    @media(max-width: 576px) {
+        margin-left: 12px;
+    }
 
     .active-name {
         font-weight: bold;

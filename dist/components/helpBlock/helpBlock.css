@@ -4,6 +4,9 @@
     .helpBlock {
       padding-left: 10px;
       padding-right: 10px; } }
+  @media (max-width: 1200px) {
+    .helpBlock .col-xl-6:first-child {
+      margin-bottom: 20px; } }
   .helpBlock-item {
     position: relative;
     min-height: 300px;
@@ -16,17 +19,23 @@
     transition: all 0.35s; }
     @media (max-width: 576px) {
       .helpBlock-item {
-        padding: 16px 45px 28px; } }
+        padding: 16px 12px 14px; } }
     .helpBlock-item__title {
       font-size: 20px;
       font-weight: bold;
       line-height: 1.5;
       color: #ffffff;
       margin-bottom: 5px; }
+      @media (max-width: 576px) {
+        .helpBlock-item__title {
+          font-size: 18px; } }
     .helpBlock-item__text {
       font-size: 16px;
       line-height: 1.88;
       color: #ffffff; }
+      @media (max-width: 576px) {
+        .helpBlock-item__text {
+          font-size: 12px; } }
       .helpBlock-item__text p {
         margin-bottom: 0px; }
     .helpBlock-item:hover {
@@ -50,4 +59,5 @@
       z-index: 1;
       height: 100%; }
       .helpBlock-item__img img {
-        height: 100%; }
+        height: 100%;
+        width: 100%; }
