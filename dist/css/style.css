@@ -8111,8 +8111,13 @@ a:hover {
   color: #fff;
   font-weight: bold; }
 
-.mr-35 {
+.filter-column {
   margin-right: 35px; }
+  @media (max-width: 768px) {
+    .filter-column {
+      margin-right: 16px; }
+      .filter-column:not(:first-child) {
+        margin-top: 12px; } }
 
 .mb-22 {
   margin-bottom: 22px; }
@@ -8139,8 +8144,9 @@ select {
   padding: 10px 40px 10px 20px; }
   @media (max-width: 576px) {
     select {
-      padding-right: 20px;
-      padding-left: 10px; } }
+      padding-right: 30px;
+      padding-left: 10px;
+      font-size: 12px; } }
 
 /* Remove IE arrow */
 select::-ms-expand {
@@ -8180,6 +8186,9 @@ select {
   align-items: center;
   justify-content: center;
   height: 100%; }
+  @media (max-width: 576px) {
+    .select::after {
+      right: 1px; } }
 
 /* Transition */
 .select:hover::after {

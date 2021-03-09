@@ -270,8 +270,14 @@ a:hover {
     font-weight: bold;
 }
 
-.mr-35 {
+.filter-column {
     margin-right: 35px;
+    @media(max-width: 768px) {
+        margin-right: 16px;
+        &:not(:first-child) {
+            margin-top: 12px;
+        }
+    }
 }
 
 .mb-22 {
@@ -301,8 +307,9 @@ select {
     background-image: none;
     padding: 10px 40px 10px 20px;
     @media(max-width: 576px) {
-        padding-right: 20px;
+        padding-right: 30px;
         padding-left: 10px;
+        font-size: 12px;
     }
 }
 
@@ -347,6 +354,9 @@ select {
     align-items: center;
     justify-content: center;
     height: 100%;
+    @media(max-width: 576px) {
+        right: 1px;
+    }
 }
 
 /* Transition */
