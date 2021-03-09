@@ -13,14 +13,20 @@
     background-color: #030616;
     transform: translateX(0px);
     z-index: 10; }
-  @media (max-width: 1440px) {
-    .leftMenu-content {
-      visibility: hidden;
-      transition: visibility 0s, opacity 0.5s linear;
-      opacity: 0; } }
-  .leftMenu-content.visible {
-    visibility: visible;
-    opacity: 1; }
+  .leftMenu-content {
+    min-height: calc(100vh - 120px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; }
+    @media (max-width: 1440px) {
+      .leftMenu-content {
+        visibility: hidden;
+        transition: visibility 0s, opacity 0.5s linear;
+        opacity: 0; } }
+    .leftMenu-content.visible {
+      visibility: visible;
+      opacity: 1; }
 
 .logo {
   text-align: center; }
