@@ -8241,7 +8241,8 @@ select {
   height: 100%;
   flex-direction: column;
   border-style: solid;
-  border-width: 0px; }
+  border-width: 0px;
+  border-radius: 8px; }
   .challenge-item.grey .challenge-amount__numb {
     color: #c0c0c0; }
   .challenge-item.grey .challenge-item__award {

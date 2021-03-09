@@ -426,6 +426,7 @@ select {
     flex-direction: column;
     border-style: solid;
     border-width: 0px;
+    border-radius: 8px;
 
     &.grey {
         .challenge-amount__numb {
