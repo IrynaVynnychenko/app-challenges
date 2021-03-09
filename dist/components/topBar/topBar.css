@@ -148,8 +148,7 @@
     opacity: 1; }
   .part-menu__item {
     padding: 14px 22px;
-    background-color: #201e2b;
-    transition: all 0.35s; }
+    background-color: #201e2b; }
     .part-menu__item:hover > div {
       color: #E0A929; }
     .part-menu__item:first-child {

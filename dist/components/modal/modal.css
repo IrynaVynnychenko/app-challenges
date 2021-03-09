@@ -96,6 +96,13 @@
   text-align: center; }
   .modal-item__spaces {
     padding: 110px 110px 48px 110px; }
+    @media (max-width: 768px) {
+      .modal-item__spaces {
+        padding: 80px 55px 24px 55px; } }
+    @media (max-width: 576px) {
+      .modal-item__spaces {
+        padding-right: 16px;
+        padding-left: 16px; } }
   .modal-item__welcome {
     font-size: 25px;
     font-weight: 300;
@@ -105,6 +112,9 @@
     font-weight: bold;
     line-height: 1.25;
     margin-bottom: 64px; }
+    @media (max-width: 576px) {
+      .modal-item__congrats {
+        font-size: 26px; } }
 
 .modal-slider__item {
   margin-bottom: 80px; }

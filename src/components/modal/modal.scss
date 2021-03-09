@@ -116,6 +116,13 @@
 
   &__spaces {
     padding: 110px 110px 48px 110px;
+    @media(max-width: 768px) {
+      padding: 80px 55px 24px 55px;
+    }
+    @media(max-width: 576px) {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
   }
 
   &__welcome {
@@ -129,6 +136,9 @@
     font-weight: bold;
     line-height: 1.25;
     margin-bottom: 64px;
+    @media(max-width: 576px) {
+      font-size: 26px;
+    }
   }
 
 }
