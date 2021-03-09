@@ -2,14 +2,23 @@
   padding-left: 20px;
   z-index: 4 !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
+  @media (max-width: 576px) {
+    .topBar {
+      padding-left: 0px; } }
   .topBar-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%; }
+    @media (max-width: 1023px) {
+      .topBar-row {
+        flex-wrap: wrap; } }
   .topBar-items {
     display: flex;
     align-items: center; }
+    @media (max-width: 1023px) {
+      .topBar-items {
+        width: 100%; } }
     .topBar-items__each {
       border-radius: 2px;
       padding: 28px 20px 25px;
@@ -22,6 +31,10 @@
       line-height: 1.57;
       color: #ffffff;
       text-transform: uppercase; }
+      @media (max-width: 575px) {
+        .topBar-items__each {
+          padding: 18px 10px 16px;
+          font-size: 12px; } }
       .topBar-items__each:hover {
         transition: all 0.35s;
         text-decoration: none;
@@ -40,6 +53,9 @@
     display: flex;
     height: 100%;
     align-items: center; }
+    @media (max-width: 575px) {
+      .topBar-info {
+        height: 74px; } }
     .topBar-info__item {
       padding-left: 32px;
       padding-right: 32px;
@@ -55,6 +71,17 @@
     display: flex;
     height: 100%;
     align-items: center; }
+    @media (max-width: 1023px) {
+      .topBar-left {
+        width: 100%;
+        height: 74px;
+        justify-content: flex-end;
+        border-top: 1px solid rgba(255, 255, 255, 0.25); } }
+    @media (max-width: 575px) {
+      .topBar-left {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-end; } }
 
 .client {
   padding-left: 32px;
@@ -64,6 +91,15 @@
   background-color: #201e2b;
   height: 100%;
   position: relative; }
+  @media (max-width: 575px) {
+    .client {
+      height: 74px;
+      width: 100%;
+      align-items: flex-start; } }
+  @media (max-width: 400px) {
+    .client {
+      padding-left: 10px;
+      padding-right: 10px; } }
   .client-info__name {
     font-size: 14px;
     font-weight: bold;
@@ -91,6 +127,9 @@
   width: 24px;
   height: 24px;
   cursor: pointer; }
+  @media (max-width: 575px) {
+    .arrow-down {
+      margin-left: auto; } }
 
 .part-menu {
   position: absolute;
@@ -150,6 +189,14 @@
   visibility: hidden;
   transition: visibility 0s, opacity 0.5s linear;
   opacity: 0; }
+  @media (max-width: 575px) {
+    .notifBlock {
+      left: -316px;
+      z-index: 11; } }
+  @media (max-width: 400px) {
+    .notifBlock {
+      width: 320px;
+      left: -240px; } }
   .notifBlock .notifBlock-row:not(:first-child) {
     position: relative; }
     .notifBlock .notifBlock-row:not(:first-child):after {

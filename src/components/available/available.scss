@@ -5,6 +5,10 @@
 
 .available-games {
   padding: 0px 40px 30px 40px;
+  @media(max-width: 576px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .available-item {
@@ -16,6 +20,11 @@
   padding: 24px 30px 28px;
   transition: all 0.35s;
   border-radius: 8px;
+  @media(max-width: 575px) {
+    padding-left: 12px;
+    padding-right: 12px;
+    min-height: 280px;
+  }
 
   &:hover {
     box-shadow: 0 0 20px 0 rgba(202, 153, 44, 0.75);
@@ -64,6 +73,13 @@
       height: 65px;
       width: auto;
       text-align: end;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      @media(max-width: 575px) {
+        justify-content: flex-start;
+        margin-bottom: 12px;
+      }
     }
 
     &-title {
@@ -71,13 +87,24 @@
       font-weight: bold;
       line-height: 1.5;
       color: #ffffff;
-
+      @media(max-width: 575px) {
+        font-size: 18px;
+      }
     }
 
     &-text {
       font-size: 16px;
       line-height: 1.88;
+      @media(max-width: 575px) {
+        font-size: 14px;
+        line-height: 1.5;
+      }
     }
   }
 }
 
+.view-all.btn {
+  @media(max-width: 575px) {
+    margin-top: 12px;
+  }
+}

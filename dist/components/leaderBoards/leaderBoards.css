@@ -1,6 +1,10 @@
 .leaderBoards {
   padding-left: 40px;
   padding-right: 40px; }
+  @media (max-width: 576px) {
+    .leaderBoards {
+      padding-left: 10px;
+      padding-right: 10px; } }
   .leaderBoards ._text {
     max-width: 622px;
     width: 100%; }

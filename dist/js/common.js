@@ -42,7 +42,7 @@
     if (
       !document.createElementNS ||
       !document.createElementNS("http://www.w3.org/2000/svg", "svg")
-        .createSVGRect
+      .createSVGRect
     )
       return true;
 
@@ -72,9 +72,144 @@
           }
         };
         request.send();
-      } catch (e) { }
+      } catch (e) {}
     });
   } else {
     load("./images/symbol_sprite.html", document.querySelector("body"));
   }
 })(window, document);
+
+document.addEventListener("DOMContentLoaded", function (event) {
+
+  if ($('.available-slider')) {
+    $(document).ready(function () {
+      $('.available-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '.available-games .next',
+        prevArrow: '.available-games .previous',
+        infinite: false,
+        responsive: [{
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+    });
+  }
+
+  if ($('.prize-slider')) {
+    $(document).ready(function () {
+      $('.prize-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        nextArrow: '.leaderBoards .next',
+        prevArrow: '.leaderBoards .previous',
+        infinite: false,
+        responsive: [{
+          breakpoint: 1572,
+          settings: {
+            slidesToShow: 1,
+          }
+        }]
+      });
+    });
+  }
+
+  if ($('.games-slider')) {
+    $(document).ready(function () {
+      $('.games-slider').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        nextArrow: '.games .next',
+        prevArrow: '.games .previous',
+        infinite: false,
+        responsive: [{
+            breakpoint: 1900,
+            settings: {
+              slidesToShow: 4,
+            }
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 3,
+            }
+          }
+        ]
+      });
+    });
+  }
+
+  if ($('.challenge-slider')) {
+    $(document).ready(function () {
+      $('.challenge-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        nextArrow: '.carousel .next',
+        prevArrow: '.carousel .previous',
+        infinite: false,
+        responsive: [{
+          breakpoint: 1650,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 1,
+          }
+        }]
+      });
+    });
+  }
+
+  const menuBtn = document.querySelector('.arrow-down');
+  const menu = document.querySelector('.part-menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('visible');
+  });
+
+  menu.addEventListener('mouseleave', () => {
+    menu.classList.remove('visible');
+  });
+
+  const notifBtn = document.querySelector('.notif-popup');
+  const notifBlock = document.querySelector('.notifBlock');
+
+  notifBtn.addEventListener('click', () => {
+    notifBlock.classList.toggle('visible');
+    notifBtn.classList.toggle('active');
+  });
+
+  menu.addEventListener('mouseleave', () => {
+    notifBlock.classList.remove('visible');
+    notifBtn.classList.remove('active');
+  });
+
+  const mobileBtnMenu = document.querySelector('.menu-btn');
+  const leftMenuAll = document.querySelector('.leftMenu');
+  const leftMenuContent = document.querySelector('.leftMenu-content');
+
+  mobileBtnMenu.addEventListener('click', () => {
+    leftMenuAll.classList.toggle('visible');
+    leftMenuContent.classList.toggle('visible');
+  })
+
+});

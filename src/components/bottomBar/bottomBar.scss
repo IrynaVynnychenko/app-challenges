@@ -3,6 +3,10 @@
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 
+  @media(max-width:400px) {
+    padding-top: 32px;
+  }
+
   &-bg {
     position: absolute;
     content: '';
@@ -20,6 +24,10 @@
     align-items: center;
     justify-content: center;
 
+    @media(max-width: 575px) {
+      flex-direction: column;
+    }
+
     &__item {
       padding-bottom: 34px;
       font-size: 14px;
@@ -31,6 +39,13 @@
       position: relative;
       transition: all 0.35s;
       text-transform: uppercase;
+
+      @media(max-width: 575px) {
+        font-size: 12px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 20px;
+      }
 
       &:hover {
         color: #f5bb0c;
@@ -48,6 +63,10 @@
           bottom: 25px;
           border-radius: 50%;
           left: calc(50% - 2.5px);
+
+          @media(max-width: 575px) {
+            bottom: 12px;
+          }
         }
       }
     }

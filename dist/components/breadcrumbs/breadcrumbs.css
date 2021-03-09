@@ -2,13 +2,23 @@
   margin: 32px 40px 0px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   padding-bottom: 28px; }
+  @media (max-width: 576px) {
+    .breadcrumbs {
+      margin-left: 10px;
+      margin-right: 10px; } }
   .breadcrumbs-title {
     margin-top: 20px;
     font-size: 25px; }
+    @media (max-width: 400px) {
+      .breadcrumbs-title {
+        font-size: 18px; } }
     .breadcrumbs-title span {
       text-transform: uppercase; }
     .breadcrumbs-title b {
       margin-right: 10px; }
+  @media (max-width: 991px) {
+    .breadcrumbs-logo {
+      margin-top: 16px; } }
 
 .return-text {
   font-size: 14px;

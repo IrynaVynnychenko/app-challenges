@@ -48,24 +48,6 @@
   <script src="./js/main.js"></script>
   <script>
     $(document).ready(function () {
-      $('.games-slider').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        nextArrow: '.games .next',
-        prevArrow: '.games .previous',
-        infinite: false
-      });
-    });
-    $(document).ready(function () {
-      $('.challenge-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        nextArrow: '.carousel .next',
-        prevArrow: '.carousel .previous',
-        infinite: false
-      });
-    });
-    $(document).ready(function () {
       $('.modal-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -75,34 +57,6 @@
       });
     });
     
-  </script>
-
-  <script>
-    const menuBtn = document.querySelector('.arrow-down');
-    const menu = document.querySelector('.part-menu');
-
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('visible');
-    });
-
-    menu.addEventListener('mouseleave', () => {
-      menu.classList.remove('visible');
-    });
-  </script>
-
-  <script>
-    const notifBtn = document.querySelector('.notif-popup');
-    const notifBlock = document.querySelector('.notifBlock');
-
-    notifBtn.addEventListener('click', () => {
-      notifBlock.classList.toggle('visible');
-      notifBtn.classList.toggle('active');
-    });
-
-    menu.addEventListener('mouseleave', () => {
-      notifBlock.classList.remove('visible');
-      notifBtn.classList.remove('active');
-    });
   </script>
 
   <script>

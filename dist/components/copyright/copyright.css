@@ -2,6 +2,10 @@
   background-color: #333333;
   padding: 14px 40px;
   margin-top: auto; }
+  @media (max-width: 576px) {
+    .copyright {
+      padding-left: 10px;
+      padding-right: 10px; } }
   .copyright-link:first-child {
     margin-right: 30px; }
   .copyright .common-style {

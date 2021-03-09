@@ -5,6 +5,30 @@
   height: 100%;
   max-width: 280px;
   width: 100%;
+
+  @media(max-width: 1440px) {
+    transform: translateX(-220px);
+    transition: transform 0s linear;
+  }
+
+  &.visible {
+    background-color: #030616;
+    transform: translateX(0px);
+    z-index: 10;
+  }
+
+  &-content {
+    @media(max-width: 1440px) {
+      visibility: hidden;
+      transition: visibility 0s, opacity 0.5s linear;
+      opacity: 0;
+    }
+
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
 }
 
 .logo {
@@ -43,12 +67,14 @@
     margin-bottom: 22px;
     justify-content: space-between;
     color: rgba(255, 255, 255, 0.5);
-    transition: all 0.35s;
+
     &:hover {
       color: #F5BB0C;
+
       .menu-list__item-row {
         opacity: 1;
       }
+
       .menu-list__link {
         color: #F5BB0C;
       }
@@ -101,6 +127,17 @@
 }
 
 .menu-btn {
+  position: absolute;
+  content: '';
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  display: none;
+
+  @media(max-width: 1440px) {
+    display: flex;
+  }
+
   svg {
     fill: #fff;
   }

@@ -2,6 +2,10 @@
   background-color: #333333;
   padding: 14px 40px;
   margin-top: auto;
+  @media(max-width: 576px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   &-link {
     &:first-child {

@@ -4,6 +4,10 @@
 
 .available-games {
   padding: 0px 40px 30px 40px; }
+  @media (max-width: 576px) {
+    .available-games {
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .available-item {
   position: relative;
@@ -14,6 +18,11 @@
   padding: 24px 30px 28px;
   transition: all 0.35s;
   border-radius: 8px; }
+  @media (max-width: 575px) {
+    .available-item {
+      padding-left: 12px;
+      padding-right: 12px;
+      min-height: 280px; } }
   .available-item:hover {
     box-shadow: 0 0 20px 0 rgba(202, 153, 44, 0.75);
     background-color: #000036;
@@ -51,12 +60,30 @@
     .available-item__content-logo {
       height: 65px;
       width: auto;
-      text-align: end; }
+      text-align: end;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end; }
+      @media (max-width: 575px) {
+        .available-item__content-logo {
+          justify-content: flex-start;
+          margin-bottom: 12px; } }
     .available-item__content-title {
       font-size: 20px;
       font-weight: bold;
       line-height: 1.5;
       color: #ffffff; }
+      @media (max-width: 575px) {
+        .available-item__content-title {
+          font-size: 18px; } }
     .available-item__content-text {
       font-size: 16px;
       line-height: 1.88; }
+      @media (max-width: 575px) {
+        .available-item__content-text {
+          font-size: 14px;
+          line-height: 1.5; } }
+
+@media (max-width: 575px) {
+  .view-all.btn {
+    margin-top: 12px; } }

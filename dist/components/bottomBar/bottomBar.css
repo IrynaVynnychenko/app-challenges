@@ -2,6 +2,9 @@
   padding-top: 44px;
   position: relative;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
+  @media (max-width: 400px) {
+    .bottomBar {
+      padding-top: 32px; } }
   .bottomBar-bg {
     position: absolute;
     content: '';
@@ -16,6 +19,9 @@
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media (max-width: 575px) {
+      .bottomBar-menu {
+        flex-direction: column; } }
     .bottomBar-menu__item {
       padding-bottom: 34px;
       font-size: 14px;
@@ -27,6 +33,12 @@
       position: relative;
       transition: all 0.35s;
       text-transform: uppercase; }
+      @media (max-width: 575px) {
+        .bottomBar-menu__item {
+          font-size: 12px;
+          margin-left: 10px;
+          margin-right: 10px;
+          padding-bottom: 20px; } }
       .bottomBar-menu__item:hover {
         color: #f5bb0c; }
       .bottomBar-menu__item.active {
@@ -40,3 +52,6 @@
           bottom: 25px;
           border-radius: 50%;
           left: calc(50% - 2.5px); }
+          @media (max-width: 575px) {
+            .bottomBar-menu__item.active:after {
+              bottom: 12px; } }

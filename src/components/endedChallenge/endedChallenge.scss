@@ -1,5 +1,9 @@
 .ended {
   padding: 30px 40px;
+  @media(max-width: 576px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
   &-block {
     justify-content: end;
