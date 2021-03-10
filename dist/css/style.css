@@ -8056,10 +8056,14 @@ a:hover {
 .page-right {
   width: calc(100% - 280px);
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-left: auto; }
   @media (max-width: 1440px) {
     .page-right {
       width: calc(100% - 60px); } }
+  @media (max-width: 991px) {
+    .page-right {
+      width: 100%; } }
 
 @media (max-width: 575px) {
   .bts {
@@ -8443,3 +8447,12 @@ select {
     display: flex; }
   .challengesGame .challenge-item__body-bg svg image {
     display: none; }
+
+svg.mail, svg.notif, svg.password {
+  cursor: pointer;
+  fill: #fff; }
+  svg.mail:hover, svg.mail:active, svg.mail:focus, svg.notif:hover, svg.notif:active, svg.notif:focus, svg.password:hover, svg.password:active, svg.password:focus {
+    fill: #E0A929; }
+    @media (max-width: 991px) {
+      svg.mail:hover, svg.mail:active, svg.mail:focus, svg.notif:hover, svg.notif:active, svg.notif:focus, svg.password:hover, svg.password:active, svg.password:focus {
+        fill: #fff; } }

@@ -198,9 +198,14 @@ a:hover {
     width: calc(100% - 280px);
     display: flex;
     flex-direction: column;
+    margin-left: auto;
 
     @media(max-width: 1440px) {
         width: calc(100% - 60px);
+    }
+
+    @media(max-width: 991px) {
+        width: 100%;
     }
 }
 
@@ -272,8 +277,10 @@ a:hover {
 
 .filter-column {
     margin-right: 35px;
+
     @media(max-width: 768px) {
         margin-right: 16px;
+
         &:not(:first-child) {
             margin-top: 12px;
         }
@@ -306,6 +313,7 @@ select {
     text-transform: uppercase;
     background-image: none;
     padding: 10px 40px 10px 20px;
+
     @media(max-width: 576px) {
         padding-right: 30px;
         padding-left: 10px;
@@ -354,6 +362,7 @@ select {
     align-items: center;
     justify-content: center;
     height: 100%;
+
     @media(max-width: 576px) {
         right: 1px;
     }
@@ -373,6 +382,7 @@ select {
 .activeChallenges-item {
     margin-left: 26px;
     justify-content: center;
+
     @media(max-width: 576px) {
         margin-left: 12px;
     }
@@ -728,6 +738,25 @@ select {
     .challenge-item__body-bg {
         svg image {
             display: none;
+        }
+    }
+}
+
+svg {
+
+    &.mail,
+    &.notif,
+    &.password {
+        cursor: pointer;
+        fill: #fff;
+
+        &:hover,
+        &:active,
+        &:focus {
+            fill: #E0A929;
+            @media(max-width: 991px) {
+                fill: #fff;
+            }
         }
     }
 }

@@ -32,9 +32,13 @@
   ._bg-btn {
     margin-left: 32px;
 
-    @media(max-width: 576px) {
-      margin-right: 28px;
+    @media(max-width: 991px) {
       margin-left: 0px;
+    }
+
+    @media(max-width: 575px) {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 
@@ -124,8 +128,8 @@
   }
 
   @media(max-width: 575px) {
-    margin-left: 0px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     justify-content: flex-start;
   }
 
@@ -174,6 +178,11 @@
     margin-left: 0px;
   }
 
+  @media(max-width: 575px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   &__title {
     font-weight: bold;
     text-transform: uppercase;
@@ -194,6 +203,11 @@
   @media(max-width: 1440px) {
     margin-right: 28px;
     margin-left: 0px;
+  }
+
+  @media(max-width: 575px) {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .activeChallenges-result__title {

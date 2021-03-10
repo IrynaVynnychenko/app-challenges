@@ -23,10 +23,13 @@
     margin-top: 20px; }
   .activeChallenges-row ._bg-btn {
     margin-left: 32px; }
-    @media (max-width: 576px) {
+    @media (max-width: 991px) {
       .activeChallenges-row ._bg-btn {
-        margin-right: 28px;
         margin-left: 0px; } }
+    @media (max-width: 575px) {
+      .activeChallenges-row ._bg-btn {
+        margin-left: 10px;
+        margin-right: 10px; } }
   .activeChallenges-row.grey .activeChallenges-item .active-name {
     color: #c0c0c0; }
   .activeChallenges-row.grey .activeChallenges-result__numb {
@@ -84,8 +87,8 @@
       margin-right: 20px; } }
   @media (max-width: 575px) {
     .activeChallenges-users {
-      margin-left: 0px;
-      margin-right: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
       justify-content: flex-start; } }
   .activeChallenges-users .active-user {
     width: 30px;
@@ -125,6 +128,10 @@
     .activeChallenges-result {
       margin-right: 28px;
       margin-left: 0px; } }
+  @media (max-width: 575px) {
+    .activeChallenges-result {
+      margin-left: 10px;
+      margin-right: 10px; } }
   .activeChallenges-result__title {
     font-weight: bold;
     text-transform: uppercase; }
@@ -141,6 +148,10 @@
     .activeChallenges-left {
       margin-right: 28px;
       margin-left: 0px; } }
+  @media (max-width: 575px) {
+    .activeChallenges-left {
+      margin-left: 10px;
+      margin-right: 10px; } }
   .activeChallenges-left .activeChallenges-result__title {
     margin-bottom: 8px; }
   .activeChallenges-left .commonStyle {

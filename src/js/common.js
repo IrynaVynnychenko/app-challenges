@@ -170,23 +170,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
         prevArrow: '.carousel .previous',
         infinite: false,
         responsive: [{
-          breakpoint: 1650,
-          settings: {
-            slidesToShow: 3,
+            breakpoint: 1650,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 1,
+            }
           }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 800,
-          settings: {
-            slidesToShow: 1,
-          }
-        }]
+        ]
       });
     });
   }
@@ -202,26 +203,33 @@ document.addEventListener("DOMContentLoaded", function (event) {
     menu.classList.remove('visible');
   });
 
-  const notifBtn = document.querySelector('.notif-popup');
+  const notifBtns = document.querySelectorAll('.notif-popup');
   const notifBlock = document.querySelector('.notifBlock');
 
-  notifBtn.addEventListener('click', () => {
-    notifBlock.classList.toggle('visible');
-    notifBtn.classList.toggle('active');
+  console.log(notifBtns);
+
+  notifBtns.forEach(item => {
+    item.addEventListener('click', () => {
+      item.querySelector('.notifBlock').classList.toggle('visible');
+      item.classList.toggle('active');
+
+      menu.addEventListener('mouseleave', () => {
+        item.querySelector('.notifBlock').classList.remove('visible');
+        item.classList.remove('active');
+      });
+
+    });
   });
 
-  menu.addEventListener('mouseleave', () => {
-    notifBlock.classList.remove('visible');
-    notifBtn.classList.remove('active');
-  });
-
-  const mobileBtnMenu = document.querySelector('.menu-btn');
+  const mobileBtnsMenu = document.querySelectorAll('.menu-btn');
   const leftMenuAll = document.querySelector('.leftMenu');
   const leftMenuContent = document.querySelector('.leftMenu-content');
 
-  mobileBtnMenu.addEventListener('click', () => {
-    leftMenuAll.classList.toggle('visible');
-    leftMenuContent.classList.toggle('visible');
-  })
+  mobileBtnsMenu.forEach(item => {
+    item.addEventListener('click', () => {
+      leftMenuAll.classList.toggle('visible');
+      leftMenuContent.classList.toggle('visible');
+    })
+  });
 
 });
