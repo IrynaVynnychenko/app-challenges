@@ -26,6 +26,12 @@
     display: none;
     padding: 10px 20px;
     width: 100%;
+    position: fixed;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    background-color: #201e2b;
+    z-index: 9;
 
     @media(max-width: 991px) {
       display: flex;
@@ -142,6 +148,10 @@
       height: 74px;
       justify-content: flex-end;
       border-top: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    @media(max-width: 991px) {
+      margin-top: 60px;
     }
 
     @media(max-width: 575px) {
