@@ -21,6 +21,9 @@
     background-position: center;
     background-size: cover;
     z-index: 10; }
+  .app-body .tab-content {
+    z-index: 11;
+    position: relative; }
 
 .app-top {
   border-bottom: solid 1px rgba(255, 255, 255, 0.25);
@@ -58,4 +61,43 @@
         bottom: 0px; }
 
 .fold-btn {
-  margin-right: 18px; }
+  margin-right: 18px;
+  cursor: pointer; }
+
+.close-btn {
+  cursor: pointer; }
+
+.carousel-wrapper {
+  padding-left: 32px;
+  padding-right: 32px;
+  position: relative;
+  z-index: 2; }
+  .carousel-wrapper .col {
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 80px;
+    padding-bottom: 20px; }
+
+.app-carousel {
+  z-index: 2; }
+  .app-carousel .challenge-item__body {
+    min-height: 408px; }
+
+.arrow-carousel {
+  position: absolute;
+  content: '';
+  top: calc(50% - 24px);
+  left: 8px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3; }
+  .arrow-carousel.next {
+    left: auto;
+    right: 8px; }
+  .arrow-carousel img {
+    width: 16px;
+    height: 14px; }

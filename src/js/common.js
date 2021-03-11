@@ -195,18 +195,18 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const menuBtn = document.querySelector('.arrow-down');
   const menu = document.querySelector('.part-menu');
 
-  menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('visible');
-  });
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('visible');
+    });
 
-  menu.addEventListener('mouseleave', () => {
-    menu.classList.remove('visible');
-  });
+    menu.addEventListener('mouseleave', () => {
+      menu.classList.remove('visible');
+    });
+  };
 
   const notifBtns = document.querySelectorAll('.notif-popup');
   const notifBlock = document.querySelector('.notifBlock');
-
-  console.log(notifBtns);
 
   notifBtns.forEach(item => {
     item.addEventListener('click', () => {
@@ -231,5 +231,19 @@ document.addEventListener("DOMContentLoaded", function (event) {
       leftMenuContent.classList.toggle('visible');
     })
   });
+
+  if ($('.app-carousel')) {
+    $(document).ready(function () {
+      $('.app-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '.next',
+        prevArrow: '.previous',
+        dots: true,
+        infinite: false,
+        infinite: true,
+      });
+    });
+  }
 
 });
