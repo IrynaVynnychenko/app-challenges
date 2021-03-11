@@ -21,6 +21,8 @@
     margin-top: 20px; }
   .activeChallenges-row .col-lg-4 {
     margin-top: 20px; }
+    .activeChallenges-row .col-lg-4 > div {
+      height: 100%; }
   .activeChallenges-row ._bg-btn {
     margin-left: 32px; }
     @media (max-width: 991px) {

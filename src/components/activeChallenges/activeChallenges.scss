@@ -27,6 +27,9 @@
 
   .col-lg-4 {
     margin-top: 20px;
+    > div {
+      height: 100%;
+    }
   }
 
   ._bg-btn {
