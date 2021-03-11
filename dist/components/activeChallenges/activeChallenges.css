@@ -14,14 +14,22 @@
   padding: 0px 32px 20px 20px;
   background-color: transparent;
   margin-bottom: 10px; }
+  @media (max-width: 1440px) {
+    .activeChallenges-row {
+      padding-right: 20px; } }
   @media (max-width: 576px) {
     .activeChallenges-row {
       padding: 12px 10px 12px 10px; } }
   .activeChallenges-row ._bg-btn {
     margin-top: 20px; }
-  .activeChallenges-row .col-lg-4 {
+  .activeChallenges-row .col-xl-4 {
     margin-top: 20px; }
-    .activeChallenges-row .col-lg-4 > div {
+    @media (max-width: 576px) {
+      .activeChallenges-row .col-xl-4 {
+        margin-top: 0px; }
+        .activeChallenges-row .col-xl-4 > div {
+          height: auto; } }
+    .activeChallenges-row .col-xl-4 > div {
       height: 100%; }
   .activeChallenges-row ._bg-btn {
     margin-left: 32px; }
