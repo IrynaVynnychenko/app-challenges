@@ -55,6 +55,13 @@
     }
   }
 
+  .active-name {
+    text-transform: none;
+    span {
+      text-transform: uppercase;
+    }
+  }
+
   &.grey {
     .activeChallenges-item .active-name {
       color: #c0c0c0;

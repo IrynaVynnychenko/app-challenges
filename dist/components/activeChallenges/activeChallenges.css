@@ -40,6 +40,10 @@
       .activeChallenges-row ._bg-btn {
         margin-left: 10px;
         margin-right: 10px; } }
+  .activeChallenges-row .active-name {
+    text-transform: none; }
+    .activeChallenges-row .active-name span {
+      text-transform: uppercase; }
   .activeChallenges-row.grey .activeChallenges-item .active-name {
     color: #c0c0c0; }
   .activeChallenges-row.grey .activeChallenges-result__numb {
