@@ -176,6 +176,7 @@ gulp.task("scripts", function () {
         .src([
             "./src/js/jquery-1.11.0.min.js",
             "./src/js/jquery-migrate-1.2.1.min.js",
+            "node_modules/bootstrap/dist/js/bootstrap.min.js",
             "./src/js/slick.min.js",
             "./src/js/common.min.js",
             "node_modules/simplebar/dist/simplebar.min.js"

@@ -162,7 +162,8 @@
     .client-img img {
       width: 46px;
       height: 46px;
-      border-radius: 50%; }
+      border-radius: 50%;
+      border: solid 1px rgba(255, 255, 255, 0.25); }
 
 .arrow-down {
   margin-left: 20px;
