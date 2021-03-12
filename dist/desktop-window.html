@@ -1304,36 +1304,7 @@
       </div>
     </div>
   </div>
-
 </div>
-</div>
-
-<script>
-  let customTabs = document.querySelectorAll('.settings-tab .topBar-items__each');
-  let customTabsBody = document.querySelectorAll('.settings-tab .value');
-
-  customTabs.forEach(elem => {
-    elem.addEventListener('click', () => {
-      customTabs.forEach(element => {
-        element.classList.remove('active');
-      });
-
-      customTabsBody.forEach(newItem => {
-        newItem.classList.remove('active');
-      });
-
-      elem.classList.add('active');
-
-      customTabsBody.forEach(item => {
-
-        if (elem.id === item.dataset.id) {
-          item.classList.add('active');
-        }
-
-      });
-    });
-  });
-</script>
 
     </div>
     <div class="tab-pane fade h-100" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
@@ -1426,4 +1397,27 @@
   </div>
 
 </div>
-</section><script src="./js/main.js"></script></body></html>
+</section><script src="./js/main.js"></script><script>let customTabs = document.querySelectorAll('.settings-tab .topBar-items__each');
+    let customTabsBody = document.querySelectorAll('.settings-tab .value');
+
+    customTabs.forEach(elem => {
+      elem.addEventListener('click', () => {
+        customTabs.forEach(element => {
+          element.classList.remove('active');
+        });
+
+        customTabsBody.forEach(newItem => {
+          newItem.classList.remove('active');
+        });
+
+        elem.classList.add('active');
+
+        customTabsBody.forEach(item => {
+
+          if (elem.id === item.dataset.id) {
+            item.classList.add('active');
+          }
+
+        });
+      });
+    });</script></body></html>

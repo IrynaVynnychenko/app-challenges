@@ -21,6 +21,33 @@
 
   <script src="./js/main.js"></script>
 
+  <script>
+    let customTabs = document.querySelectorAll('.settings-tab .topBar-items__each');
+    let customTabsBody = document.querySelectorAll('.settings-tab .value');
+
+    customTabs.forEach(elem => {
+      elem.addEventListener('click', () => {
+        customTabs.forEach(element => {
+          element.classList.remove('active');
+        });
+
+        customTabsBody.forEach(newItem => {
+          newItem.classList.remove('active');
+        });
+
+        elem.classList.add('active');
+
+        customTabsBody.forEach(item => {
+
+          if (elem.id === item.dataset.id) {
+            item.classList.add('active');
+          }
+
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>
