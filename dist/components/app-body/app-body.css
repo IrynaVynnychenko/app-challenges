@@ -1,3 +1,4 @@
+@import url(app-myChallenges.css);
 .app-body {
   background-color: #030616;
   background-image: radial-gradient(circle at 51% 43%, rgba(3, 6, 22, 0), rgba(245, 187, 12, 0.25) 122%);
@@ -75,13 +76,66 @@
   .carousel-wrapper .col {
     padding-right: 12px;
     padding-left: 12px;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 20px; }
 
 .app-carousel {
   z-index: 2; }
+  .app-carousel .challenge-item.orange .challenge-name {
+    color: #ff8003; }
+  .app-carousel .challenge-item.orange .challenge-amount__numb {
+    color: #ff8003; }
+  .app-carousel .challenge-item .challenge-name {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center; }
+  .app-carousel .challenge-item .challenge-time {
+    margin-top: 10px; }
+    .app-carousel .challenge-item .challenge-time__field-name {
+      color: #777777; }
+    .app-carousel .challenge-item .challenge-time__line {
+      max-width: 182px; }
   .app-carousel .challenge-item__body {
     min-height: 408px; }
+    .app-carousel .challenge-item__body-bg {
+      height: 280px; }
+      .app-carousel .challenge-item__body-bg svg image {
+        display: none; }
+    .app-carousel .challenge-item__body-spaces {
+      padding: 82px 10px 10px; }
+  .app-carousel .challenge-item__award {
+    max-width: 100px;
+    min-height: 88px; }
+    .app-carousel .challenge-item__award b {
+      font-size: 20px; }
+  .app-carousel .challenge-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .app-carousel .challenge-btns__coins {
+      border-radius: 4px;
+      border: solid 1px #f5bb0c;
+      padding: 10px 15px;
+      font-size: 12px;
+      margin-right: -4px;
+      font-weight: 600; }
+  .app-carousel .challenge-amount {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .app-carousel .challenge-amount__numb {
+      font-size: 12px;
+      font-weight: bold; }
+    .app-carousel .challenge-amount__text {
+      font-size: 9px;
+      line-height: 2.22;
+      color: #c0c0c0;
+      margin-left: 6px;
+      text-transform: uppercase; }
+  .app-carousel .slick-dots {
+    bottom: -20px; }
 
 .arrow-carousel {
   position: absolute;

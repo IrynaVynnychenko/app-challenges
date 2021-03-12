@@ -1,3 +1,5 @@
+@import "app-myChallenges.css";
+
 .app-body {
   background-color: #030616;
   background-image: radial-gradient(circle at 51% 43%, rgba(3, 6, 22, 0), rgba(245, 187, 12, 0.25) 122%);
@@ -93,15 +95,109 @@
   .col {
     padding-right: 12px;
     padding-left: 12px;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 20px;
   }
 }
 
 .app-carousel {
   z-index: 2;
-  .challenge-item__body {
-    min-height: 408px;
+
+  .challenge-item {
+    &.orange {
+      .challenge-name {
+        color: #ff8003;
+      }
+
+      .challenge-amount__numb {
+        color: #ff8003;
+      }
+    }
+
+    .challenge-name {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .challenge-time {
+      margin-top: 10px;
+
+      &__field-name {
+        color: #777777;
+      }
+
+      &__line {
+        max-width: 182px;
+      }
+    }
+
+    &__body {
+      min-height: 408px;
+
+      &-bg {
+        height: 280px;
+
+        svg {
+          image {
+            display: none;
+          }
+        }
+      }
+
+      &-spaces {
+        padding: 82px 10px 10px;
+      }
+    }
+
+    &__award {
+      max-width: 100px;
+      min-height: 88px;
+
+      b {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .challenge-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__coins {
+      border-radius: 4px;
+      border: solid 1px #f5bb0c;
+      padding: 10px 15px;
+      font-size: 12px;
+      margin-right: -4px;
+      font-weight: 600;
+    }
+  }
+
+  .challenge-amount {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__numb {
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    &__text {
+      font-size: 9px;
+      line-height: 2.22;
+      color: #c0c0c0;
+      margin-left: 6px;
+      text-transform: uppercase;
+    }
+  }
+
+  .slick-dots {
+    bottom: -20px;
   }
 }
 
