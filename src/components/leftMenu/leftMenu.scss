@@ -37,11 +37,6 @@
     display: flex;
     flex-direction: column;
 
-    @media(max-width: 768px) {
-      overflow-y: auto;
-      min-height: calc(100vh - 120px);
-    }
-
     @media(max-width: 1440px) {
       visibility: hidden;
       transition: visibility 0s, opacity 0.5s linear;
@@ -199,28 +194,27 @@
   }
 }
 
-@media (min-width: 768px) {
-  .leftMenu-scroll {
-    overflow-y: auto;
-    height: 300px;
+.leftMenu-scroll {
+  overflow-y: auto;
+  height: calc(100vh - 21px - 182px - 159px - 60px - 46px);
 
-    .simplebar-scrollbar {
-      right: 2px;
-      width: 7px;
-      border-radius: 10.5;
-      height: 60px;
+  .simplebar-scrollbar {
+    right: 0px;
+    width: 10px;
+    border-radius: 0px;
+    height: 40px;
+    background-color: transparent !important;
 
-      &::before {
-        background-image: #777777;
-        right: -35px;
-        width: 100%;
-        border-radius: 10.5;
-      }
+    &::before {
+      background-color: #777777;
+      right: -35px;
+      width: 100%;
+      border-radius: 0px;
+      background-image: none !important;
     }
+  }
 
-    .simplebar-track::before {
-      box-shadow: 0 0 2px 0 rgba(192, 192, 192, 0.5), inset 0 1px 6px 0 rgba(192, 192, 192, 0.36);
-      background-color: #201e2b;
-    }
+  .simplebar-track::before {
+    background-color: #201e2b;
   }
 }

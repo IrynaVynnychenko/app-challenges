@@ -221,10 +221,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }, "infinite", true));
     });
   }
-
-  var simpleBar = new SimpleBar(document.getElementByClass('leftMenu-scroll'), {
-    scrollbarMinSize: '60px'
-  });
-  simpleBar.recalculate();
-  simpleBar.getScrollElement();
 });
