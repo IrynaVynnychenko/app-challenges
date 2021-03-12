@@ -27,8 +27,11 @@
     min-height: calc(100vh - 120px);
     height: 100%;
     display: flex;
-    flex-direction: column;
-    overflow-y: auto; }
+    flex-direction: column; }
+    @media (max-width: 768px) {
+      .leftMenu-content {
+        overflow-y: auto;
+        min-height: calc(100vh - 120px); } }
     @media (max-width: 1440px) {
       .leftMenu-content {
         visibility: hidden;
@@ -138,3 +141,21 @@
       color: #f5bb0c; }
       .menu__mobile-btns .topBar-items__each.active:after {
         display: none; }
+
+@media (min-width: 768px) {
+  .leftMenu-scroll {
+    overflow-y: auto;
+    height: 300px; }
+    .leftMenu-scroll .simplebar-scrollbar {
+      right: 2px;
+      width: 7px;
+      border-radius: 10.5;
+      height: 60px; }
+      .leftMenu-scroll .simplebar-scrollbar::before {
+        background-image: #777777;
+        right: -35px;
+        width: 100%;
+        border-radius: 10.5; }
+    .leftMenu-scroll .simplebar-track::before {
+      box-shadow: 0 0 2px 0 rgba(192, 192, 192, 0.5), inset 0 1px 6px 0 rgba(192, 192, 192, 0.36);
+      background-color: #201e2b; } }

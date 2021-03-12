@@ -421,9 +421,6 @@
   .ended .prize-item:before {
     display: none; }
 
-.ended .prize-row:first-child {
-  flex-wrap: wrap; }
-
 .ended .prize-row:nth-child(3) {
   color: #c0c0c0; }
   .ended .prize-row:nth-child(3) .col-auto-right {

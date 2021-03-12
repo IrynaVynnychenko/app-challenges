@@ -246,4 +246,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  const simpleBar = new SimpleBar(document.getElementByClass('leftMenu-scroll'), {
+    scrollbarMinSize: '60px'
+  });
+
+  simpleBar.recalculate();
+  simpleBar.getScrollElement();
+
 });
